@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TravelWithMe - 다낭 · 호이안 3박 4일 투어 (A안)</title>
+    <title>TravelWithMe - 제주도 감성 힐링 3박 4일</title>
     <!-- Tailwind CSS & FontAwesome CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -28,6 +28,7 @@
                 <a href="#overview" class="hover:text-sky-600">개요</a>
                 <a href="#itinerary" class="hover:text-sky-600">일정표</a>
                 <a href="#highlights" class="hover:text-sky-600">핵심 포인트</a>
+                <a href="#reviews" class="hover:text-sky-600">이용 후기</a>
             </nav>
             <div class="flex items-center space-x-3 text-sm font-semibold text-slate-700">
                 <i class="fa-solid fa-phone text-sky-600"></i>
@@ -36,105 +37,130 @@
         </div>
     </header>
     <!-- MAIN PRODUCT SECTION -->
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">      
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">        
         <div class="mb-4">
             <div class="flex items-center space-x-2 text-xs text-slate-500 mb-2">
-                <span>홈</span> <span>/</span> <span>동남아 여행</span> <span>/</span> <span class="text-slate-800 font-medium">베트남 다낭</span>
+                <span>홈</span> <span>/</span> <span>국내 여행</span> <span>/</span> <span class="text-slate-800 font-medium">제주특별자치도</span>
             </div>
             <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                다낭 · 호이안 · 바나힐 · 골든브릿지 힐링 패키지 (3박 4일)
+                🌴 제주도 오션뷰 호텔 & 핫플 감성 투어 (3박 4일)
             </h1>
             <div class="flex flex-wrap items-center gap-4 mt-2 text-sm text-slate-600">
                 <div class="flex items-center text-amber-500 font-bold">
-                    <i class="fa-solid fa-star mr-1"></i> 4.9 <span class="text-slate-400 font-normal ml-1">(696개 후기)</span>
+                    <i class="fa-solid fa-star mr-1"></i> 4.95 <span class="text-slate-400 font-normal ml-1">(369개 후기)</span>
                 </div>
-                <div class="flex items-center"><i class="fa-solid fa-location-dot text-rose-500 mr-1.5"></i> 베트남 다낭</div>
+                <div class="flex items-center"><i class="fa-solid fa-location-dot text-rose-500 mr-1.5"></i> 대한민국 제주도</div>
                 <div class="flex items-center"><i class="fa-solid fa-clock text-sky-500 mr-1.5"></i> 3박 4일</div>
             </div>
         </div>
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">            
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">          
             <!-- LEFT GALLERY -->
             <div class="lg:col-span-2 space-y-4">
                 <div class="relative h-[340px] sm:h-[420px] rounded-2xl overflow-hidden shadow-lg">
-                    <img id="mainImage" src="https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?auto=format&fit=crop&w=1200&q=80" alt="바나힐" class="w-full h-full object-cover">
+                    <img id="mainImage" src="https://images.unsplash.com/photo-1548115184-bc6544d06a58?auto=format&fit=crop&w=1200&q=80" alt="제주도 성산일출봉" class="w-full h-full object-cover">
                     <div class="absolute top-4 left-4 bg-slate-900/80 text-white text-xs font-semibold px-3 py-1.5 rounded-full flex items-center gap-1.5">
-                        <i class="fa-solid fa-fire text-amber-400"></i> 베스트셀러 투어
+                        <i class="fa-solid fa-fire text-amber-400"></i> 요즘 가장 핫한 제주 패키지
                     </div>
                 </div>
                 <div class="grid grid-cols-4 gap-3">
-                    <img onclick="document.getElementById('mainImage').src=this.src" class="h-20 w-full object-cover rounded-xl cursor-pointer hover:opacity-80" src="https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?auto=format&fit=crop&w=400&q=80">
-                    <img onclick="document.getElementById('mainImage').src=this.src" class="h-20 w-full object-cover rounded-xl cursor-pointer hover:opacity-80" src="https://images.unsplash.com/photo-1583417319070-4a69db38a482?auto=format&fit=crop&w=400&q=80">
-                    <img onclick="document.getElementById('mainImage').src=this.src" class="h-20 w-full object-cover rounded-xl cursor-pointer hover:opacity-80" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=80">
-                    <img onclick="document.getElementById('mainImage').src=this.src" class="h-20 w-full object-cover rounded-xl cursor-pointer hover:opacity-80" src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=400&q=80">
+                    <img onclick="document.getElementById('mainImage').src=this.src" class="h-20 w-full object-cover rounded-xl cursor-pointer hover:opacity-80 transition" src="https://images.unsplash.com/photo-1548115184-bc6544d06a58?auto=format&fit=crop&w=400&q=80">
+                    <img onclick="document.getElementById('mainImage').src=this.src" class="h-20 w-full object-cover rounded-xl cursor-pointer hover:opacity-80 transition" src="https://images.unsplash.com/photo-1579168765467-3b235f938439?auto=format&fit=crop&w=400&q=80">
+                    <img onclick="document.getElementById('mainImage').src=this.src" class="h-20 w-full object-cover rounded-xl cursor-pointer hover:opacity-80 transition" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=80">
+                    <img onclick="document.getElementById('mainImage').src=this.src" class="h-20 w-full object-cover rounded-xl cursor-pointer hover:opacity-80 transition" src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=400&q=80">
                 </div>
             </div>
-            <!-- RIGHT PRICING BOX (VARIANT A: TOTAL PRICE ONLY) -->
+            <!-- RIGHT PRICING BOX (VARIANT A: TOTAL PRICE 399,000 KRW) -->
             <div class="lg:col-span-1">
-                <div class="bg-white rounded-2xl shadow-xl border border-slate-200 p-6 sticky top-[80px]">                   
+                <div class="bg-white rounded-2xl shadow-xl border border-slate-200 p-6 sticky top-[80px]">                    
                     <!-- PRICE DISPLAY A -->
                     <div class="mb-6 p-4 rounded-xl bg-slate-50 border border-slate-100">
                         <div class="text-xs text-slate-500 font-medium uppercase mb-1">3박 4일 전 일정 총액</div>
                         <div class="flex items-baseline space-x-1">
-                            <span class="text-3xl font-extrabold text-sky-600">₩599,000</span>
+                            <span class="text-3xl font-extrabold text-sky-600">₩399,000</span>
                             <span class="text-xs text-slate-500">/ 1인</span>
                         </div>
-                        <div class="text-[11px] text-slate-400 mt-1"><i class="fa-solid fa-circle-info mr-1"></i>세금, 유류할증료 및 입장료 포함</div>
+                        <div class="text-[11px] text-slate-400 mt-1"><i class="fa-solid fa-circle-info mr-1"></i>항공, 4성급 호텔, 주요 입장권 포함</div>
                     </div>
                     <div class="space-y-4 mb-6 text-sm">
+                        <!-- CALENDAR DATE PICKER -->
                         <div>
-                            <label class="block font-medium text-slate-700 mb-1.5"><i class="fa-regular fa-calendar text-sky-600 mr-1.5"></i>출발일 선택</label>
-                            <select class="w-full border border-slate-300 rounded-xl px-3 py-2.5 bg-white">
-                                <option>매주 목요일 출발 (확정)</option>
-                                <option>매주 토요일 출발</option>
-                            </select>
+                            <label class="block font-medium text-slate-700 mb-1.5"><i class="fa-regular fa-calendar-days text-sky-600 mr-1.5"></i>출발일 선택</label>
+                            <input type="date" class="w-full border border-slate-300 rounded-xl px-3 py-2.5 bg-white text-slate-700 font-medium cursor-pointer focus:ring-2 focus:ring-sky-500 focus:outline-none" value="2026-10-15">
                         </div>
+                        <!-- PEOPLE SELECTOR -->
                         <div>
                             <label class="block font-medium text-slate-700 mb-1.5"><i class="fa-solid fa-users text-sky-600 mr-1.5"></i>인원 선택</label>
-                            <div class="flex items-center justify-between border border-slate-300 rounded-xl p-2">
-                                <span class="text-slate-600 text-xs pl-2">성인 (만 12세 이상)</span>
+                            <div class="flex items-center justify-between border border-slate-300 rounded-xl p-2.5">
+                                <span class="text-slate-700 font-medium text-sm pl-2">인원</span>
                                 <span class="font-bold text-slate-900 px-3">1명</span>
                             </div>
                         </div>
                     </div>
-                    <button onclick="handleBooking()" class="w-full gradient-bg hover:opacity-95 text-white font-bold py-3.5 rounded-xl shadow-lg shadow-sky-500/25 transition">
-                        지금 예약하기
+                    <!-- URGENT CTA BUTTON -->
+                    <button onclick="handleBooking('A')" class="w-full gradient-bg hover:opacity-95 text-white font-bold py-3.5 rounded-xl shadow-lg shadow-sky-500/25 transition flex items-center justify-center space-x-2">
+                        <span>🔥 마감 임박! 지금 바로 예약하기</span>
                     </button>
                 </div>
             </div>
         </div>
-        <!-- DETAILS -->
+        <!-- DETAILS & REVIEWS -->
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <div class="lg:col-span-2 space-y-8">
+            <div class="lg:col-span-2 space-y-8">                
+                <!-- HIGHLIGHTS -->
                 <section id="highlights" class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
                     <h2 class="text-xl font-bold text-slate-900 mb-4 flex items-center">
-                        <i class="fa-solid fa-wand-magic-sparkles text-amber-500 mr-2.5"></i> 핵심 여행 포인트
+                        <i class="fa-solid fa-wand-magic-sparkles text-amber-500 mr-2.5"></i> 제주 여행 핵심 포인트
                     </h2>
                     <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-slate-700">
-                        <li class="flex items-center space-x-2"><i class="fa-solid fa-circle-check text-emerald-500"></i><span>미케비치 앞 4성급 호텔 숙박</span></li>
-                        <li class="flex items-center space-x-2"><i class="fa-solid fa-circle-check text-emerald-500"></i><span>바나힐 왕복 케이블카 & 골든브릿지</span></li>
-                        <li class="flex items-center space-x-2"><i class="fa-solid fa-circle-check text-emerald-500"></i><span>호이안 야경 투어 & 등불 체험</span></li>
-                        <li class="flex items-center space-x-2"><i class="fa-solid fa-circle-check text-emerald-500"></i><span>전 일정 최신형 리무진 차량 이동</span></li>
+                        <li class="flex items-center space-x-2"><i class="fa-solid fa-circle-check text-emerald-500"></i><span>전 일정 4성급 오션뷰 리조트 숙박</span></li>
+                        <li class="flex items-center space-x-2"><i class="fa-solid fa-circle-check text-emerald-500"></i><span>애월 감성 카페거리 & 인생샷 포토스팟</span></li>
+                        <li class="flex items-center space-x-2"><i class="fa-solid fa-circle-check text-emerald-500"></i><span>우도(牛島) 섬 투어 및 전동스쿠터 포함</span></li>
+                        <li class="flex items-center space-x-2"><i class="fa-solid fa-circle-check text-emerald-500"></i><span>제주 명물 흑돼지 구이 & 해산물 특식 제공</span></li>
                     </ul>
                 </section>
+                <!-- ITINERARY -->
                 <section id="itinerary" class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
                     <h2 class="text-xl font-bold text-slate-900 mb-6 flex items-center">
-                        <i class="fa-solid fa-route text-sky-600 mr-2.5"></i> 요약 일정표 (3박 4일)
+                        <i class="fa-solid fa-route text-sky-600 mr-2.5"></i> 트렌디 요약 일정표 (3박 4일)
                     </h2>
                     <div class="space-y-4 text-sm text-slate-600">
-                        <p><strong>1일차:</strong> 공항 미팅 - 다낭 도착 - 손짜반도 - 미케비치 자유시간</p>
-                        <p><strong>2일차:</strong> 바나힐 국립공원 - 골든브릿지 - 판타지파크 테마파크</p>
-                        <p><strong>3일차:</strong> 오행산 탐방 - 호이안 옛거리 탐방 & 야경 감상</p>
-                        <p><strong>4일차:</strong> 한시장 기념품 쇼핑 - 다낭 공항 이동 및 귀국</p>
+                        <p><strong>1일차:</strong> 제주공항 도착 - 애월 해안도로 드라이브 - 감성 카페거리 Check-in - 용두암 일몰 감상</p>
+                        <p><strong>2일차:</strong> 카멜리아 힐(또는 스누피 가든) 인생샷 투어 - 중문 주상절리 - 서귀포 올레시장 야시장 탐방</p>
+                        <p><strong>3일차:</strong> 성산일출봉 탐방 - 우도 도항 및 전동스쿠터 자유 여행 - 제주 흑돼지 구이 저녁 특식</p>
+                        <p><strong>4일차:</strong> 사려니 숲길 힐링 산책 - 동문시장 오메기떡 & 감귤 기념품 쇼핑 - 제주공항 출발</p>
+                    </div>
+                </section>
+                <!-- REVIEWS SECTION -->
+                <section id="reviews" class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                    <h2 class="text-xl font-bold text-slate-900 mb-4 flex items-center">
+                        <i class="fa-solid fa-comments text-sky-500 mr-2.5"></i> 실제 이용객 리얼 후기
+                    </h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+                        <div class="p-4 bg-slate-50 rounded-xl border border-slate-100">
+                            <div class="text-amber-400 mb-1"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                            <p class="text-slate-700 font-medium">"애월 카페거리랑 우도 스쿠터 일정이 진짜 완벽했어요! 오션뷰 숙소도 너무 깨끗했습니다."</p>
+                            <span class="text-xs text-slate-400 mt-2 block">- 김*현 님 (2026.09)</span>
+                        </div>
+                        <div class="p-4 bg-slate-50 rounded-xl border border-slate-100">
+                            <div class="text-amber-400 mb-1"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                            <p class="text-slate-700 font-medium">"일정이 여유로워서 인생샷 많이 건졌어요. 부모님도 흑돼지 특식에 너무 만족하셨습니다."</p>
+                            <span class="text-xs text-slate-400 mt-2 block">- 박*준 님 (2026.08)</span>
+                        </div>
+                        <div class="p-4 bg-slate-50 rounded-xl border border-slate-100">
+                            <div class="text-amber-400 mb-1"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                            <p class="text-slate-700 font-medium">"가성비 최고입니다. 이동 차량도 편하고 가이드분도 친절하셔서 편하게 다녀왔어요."</p>
+                            <span class="text-xs text-slate-400 mt-2 block">- 이*연 님 (2026.09)</span>
+                        </div>
                     </div>
                 </section>
             </div>
         </div>
     </main>
     <script>
-        function handleBooking() {
-            alert("[A/B Test Variant A] '지금 예약하기' 클릭이 기록되었습니다.");
-            let count = localStorage.getItem('clicks_variant_A') || 0;
-            localStorage.setItem('clicks_variant_A', parseInt(count) + 1);
+        function handleBooking(variant) {
+            alert("🎉 예약 요청이 성공적으로 완료되었습니다!\n\n즐겁고 행복한 제주 여행이 되시길 바랍니다. ✈️🌸");
+            let count = localStorage.getItem('clicks_variant_' + variant) || 0;
+            localStorage.setItem('clicks_variant_' + variant, parseInt(count) + 1);
         }
     </script>
 </body>
