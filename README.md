@@ -35,8 +35,8 @@
             </div>
         </div>
     </header>
-   <!-- MAIN PRODUCT SECTION -->
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">     
+    <!-- MAIN PRODUCT SECTION -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">      
         <div class="mb-4">
             <div class="flex items-center space-x-2 text-xs text-slate-500 mb-2">
                 <span>홈</span> <span>/</span> <span>동남아 여행</span> <span>/</span> <span class="text-slate-800 font-medium">베트남 다낭</span>
@@ -52,8 +52,8 @@
                 <div class="flex items-center"><i class="fa-solid fa-clock text-sky-500 mr-1.5"></i> 3박 4일</div>
             </div>
         </div>
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
-                     <!-- LEFT GALLERY -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">           
+            <!-- LEFT GALLERY -->
             <div class="lg:col-span-2 space-y-4">
                 <div class="relative h-[340px] sm:h-[420px] rounded-2xl overflow-hidden shadow-lg">
                     <img id="mainImage" src="https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?auto=format&fit=crop&w=1200&q=80" alt="바나힐" class="w-full h-full object-cover">
@@ -70,7 +70,7 @@
             </div>
             <!-- RIGHT PRICING BOX (VARIANT A: TOTAL PRICE ONLY) -->
             <div class="lg:col-span-1">
-                <div class="bg-white rounded-2xl shadow-xl border border-slate-200 p-6 sticky top-[80px]">
+                <div class="bg-white rounded-2xl shadow-xl border border-slate-200 p-6 sticky top-[80px]">                   
                     <!-- PRICE DISPLAY A -->
                     <div class="mb-6 p-4 rounded-xl bg-slate-50 border border-slate-100">
                         <div class="text-xs text-slate-500 font-medium uppercase mb-1">3박 4일 전 일정 총액</div>
