@@ -11,8 +11,7 @@
     <!-- Google Fonts Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">  
     <script>
         tailwind.config = {
             theme: {
@@ -48,7 +47,6 @@
     </style>
 </head>
 <body class="bg-gray-50 font-sans text-gray-800 antialiased flex flex-col min-h-screen">
-
     <!-- Top Announcement Bar -->
     <div class="bg-brand-dark text-gray-300 text-xs py-2 px-4 border-b border-gray-800">
         <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
@@ -66,7 +64,6 @@
             </div>
         </div>
     </div>
-
     <!-- Main Navigation Bar -->
     <header class="bg-white shadow-md sticky top-0 z-40">
         <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
@@ -80,7 +77,6 @@
                     <span class="text-[10px] text-gray-500 tracking-widest uppercase font-semibold">Du Lịch & Trải Nghiệm</span>
                 </div>
             </a>
-
             <!-- Search Bar -->
             <div class="hidden md:flex flex-1 max-w-md relative">
                 <input type="text" id="searchInput" oninput="handleSearch()" placeholder="Tìm kiếm tour du lịch, điểm đến..." class="w-full bg-gray-100 border border-gray-200 rounded-full py-2.5 pl-4 pr-10 text-sm focus:outline-none focus:ring-2 focus:ring-brand-orange focus:bg-white transition">
@@ -88,7 +84,6 @@
                     <i class="fa-solid fa-magnifying-glass text-xs"></i>
                 </button>
             </div>
-
             <!-- User Options -->
             <div class="flex items-center gap-4">
                 <a href="#wishlist" onclick="toggleWishlistModal()" class="relative flex flex-col items-center text-gray-600 hover:text-brand-orange transition">
@@ -105,7 +100,6 @@
                 </button>
             </div>
         </div>
-
         <!-- Secondary Menu links -->
         <nav class="bg-gray-900 text-white hidden md:block">
             <div class="max-w-7xl mx-auto px-4 flex items-center space-x-8 text-sm font-medium py-2.5">
@@ -119,10 +113,8 @@
             </div>
         </nav>
     </header>
-
     <!-- Main Content Container -->
     <main class="flex-grow max-w-7xl w-full mx-auto px-4 py-8">
-        
         <!-- SECTION TITLE: TOUR GIỜ CHÓT GIÁ TỐT -->
         <section id="tour-section" class="mb-12">
             <div class="text-center mb-8">
@@ -134,17 +126,14 @@
                 </p>
                 <div class="w-16 h-1 bg-brand-orange mx-auto mt-3 rounded-full"></div>
             </div>
-
             <!-- Filter Tabs -->
             <div class="flex flex-wrap justify-center gap-2 mb-8 text-sm">
                 <button onclick="filterCategory('all')" id="btn-all" class="filter-btn active bg-brand-orange text-white px-5 py-2 rounded-full font-medium transition shadow-sm">Tất Cả Tour</button>
                 <button onclick="filterCategory('domestic')" id="btn-domestic" class="filter-btn bg-white text-gray-700 hover:bg-gray-100 border border-gray-200 px-5 py-2 rounded-full font-medium transition">Du Lịch Trong Nước</button>
                 <button onclick="filterCategory('foreign')" id="btn-foreign" class="filter-btn bg-white text-gray-700 hover:bg-gray-100 border border-gray-200 px-5 py-2 rounded-full font-medium transition">Du Lịch Nước Ngoài</button>
             </div>
-
             <!-- TOUR CARDS GRID (Matches Screenshot exact content) -->
-            <div id="tourGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                
+            <div id="tourGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">                
                 <!-- CARD 1: Tour Campuchia -->
                 <div class="tour-card category-foreign bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
                     <div class="relative overflow-hidden aspect-[4/3]">
@@ -157,14 +146,12 @@
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="font-bold text-gray-800 text-sm leading-snug line-clamp-2 min-h-[2.5rem] group-hover:text-brand-orange transition">
                             Tour Campuchia 4N3Đ: Bokor - Shihanouk Ville - Kohrong - Phnôm...
-                        </h3>
-                        
+                        </h3>                       
                         <!-- Transport Icons -->
                         <div class="flex items-center gap-3 my-3 text-gray-600 text-sm">
                             <i class="fa-solid fa-bus" title="Xe du lịch"></i>
                             <i class="fa-solid fa-plane" title="Máy bay"></i>
                         </div>
-
                         <!-- Departure & Duration Details -->
                         <div class="space-y-1.5 text-xs text-gray-600 mb-4 border-b border-gray-100 pb-3 flex-grow">
                             <div class="flex items-center gap-1.5">
@@ -176,7 +163,6 @@
                                 <span>Thời gian: <strong class="text-gray-700">4 ngày 3 đêm</strong></span>
                             </div>
                         </div>
-
                         <!-- Price & Action Button -->
                         <div class="flex items-end justify-between gap-2 mt-auto">
                             <div>
@@ -189,7 +175,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- CARD 2: Du lịch Hà Nội - Ninh Bình -->
                 <div class="tour-card category-domestic bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
                     <div class="relative overflow-hidden aspect-[4/3]">
@@ -202,13 +187,11 @@
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="font-bold text-gray-800 text-sm leading-snug line-clamp-2 min-h-[2.5rem] group-hover:text-brand-orange transition">
                             Du lịch Hà Nội - Ninh Bình - Cát Bà - Hạ Long - Hải Dương
-                        </h3>
-                        
+                        </h3>                       
                         <!-- Transport Icons -->
                         <div class="flex items-center gap-3 my-3 text-gray-600 text-sm">
                             <i class="fa-solid fa-bus" title="Xe du lịch"></i>
                         </div>
-
                         <!-- Departure & Duration Details -->
                         <div class="space-y-1.5 text-xs text-gray-600 mb-4 border-b border-gray-100 pb-3 flex-grow">
                             <div class="flex items-center gap-1.5">
@@ -220,7 +203,6 @@
                                 <span>Thời gian: <strong class="text-gray-700">4 ngày 3 đêm</strong></span>
                             </div>
                         </div>
-
                         <!-- Price & Action Button -->
                         <div class="flex items-end justify-between gap-2 mt-auto">
                             <div>
@@ -233,7 +215,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- CARD 3: Du lịch Phan Thiết - Mũi Né -->
                 <div class="tour-card category-domestic bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
                     <div class="relative overflow-hidden aspect-[4/3]">
@@ -245,13 +226,11 @@
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="font-bold text-gray-800 text-sm leading-snug line-clamp-2 min-h-[2.5rem] group-hover:text-brand-orange transition">
                             Du lịch Phan Thiết - Mũi Né 3 ngày
-                        </h3>
-                        
+                        </h3>                        
                         <!-- Transport Icons -->
                         <div class="flex items-center gap-3 my-3 text-gray-600 text-sm">
                             <i class="fa-solid fa-bus" title="Xe du lịch"></i>
                         </div>
-
                         <!-- Departure & Duration Details -->
                         <div class="space-y-1.5 text-xs text-gray-600 mb-4 border-b border-gray-100 pb-3 flex-grow">
                             <div class="flex items-center gap-1.5">
@@ -263,7 +242,6 @@
                                 <span>Thời gian: <strong class="text-gray-700">3 ngày 2 đêm</strong></span>
                             </div>
                         </div>
-
                         <!-- Price & Action Button -->
                         <div class="flex items-end justify-between gap-2 mt-auto">
                             <div>
@@ -276,7 +254,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- CARD 4: Du lịch Nha Trang - Hòn Tằm -->
                 <div class="tour-card category-domestic bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
                     <div class="relative overflow-hidden aspect-[4/3]">
@@ -288,14 +265,12 @@
                     <div class="p-4 flex flex-col flex-grow">
                         <h3 class="font-bold text-gray-800 text-sm leading-snug line-clamp-2 min-h-[2.5rem] group-hover:text-brand-orange transition">
                             Du lịch Nha Trang - Hòn Tằm - KDL Vinpearl
-                        </h3>
-                        
+                        </h3>                        
                         <!-- Transport Icons -->
                         <div class="flex items-center gap-3 my-3 text-gray-600 text-sm">
                             <i class="fa-solid fa-bus" title="Xe du lịch"></i>
                             <i class="fa-solid fa-plane" title="Máy bay"></i>
                         </div>
-
                         <!-- Departure & Duration Details -->
                         <div class="space-y-1.5 text-xs text-gray-600 mb-4 border-b border-gray-100 pb-3 flex-grow">
                             <div class="flex items-center gap-1.5">
@@ -307,7 +282,6 @@
                                 <span>Thời gian: <strong class="text-gray-700">3 ngày 2 đêm</strong></span>
                             </div>
                         </div>
-
                         <!-- Price & Action Button -->
                         <div class="flex items-end justify-between gap-2 mt-auto">
                             <div>
@@ -320,14 +294,11 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
-
         <!-- PROMOTIONAL BANNERS SECTION (Matches Screenshot Bottom Banners) -->
         <section id="promo-section" class="mt-12">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">                
                 <!-- BANNER 1: Tây Bắc -->
                 <div class="relative rounded-2xl overflow-hidden shadow-lg group min-h-[200px] flex items-center cursor-pointer">
                     <img src="https://images.unsplash.com/photo-1508873696983-2df515122519?auto=format&fit=crop&w=800&q=80" alt="Tây Bắc" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
@@ -347,7 +318,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- BANNER 2: Miền Tây -->
                 <div class="relative rounded-2xl overflow-hidden shadow-lg group min-h-[200px] flex items-center cursor-pointer">
                     <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=800&q=80" alt="Miền Tây" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
@@ -367,12 +337,9 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
-
     </main>
-
     <!-- Footer -->
     <footer class="bg-gray-900 text-gray-400 text-sm mt-16 border-t border-gray-800">
         <div class="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -388,7 +355,6 @@
                     <p><i class="fa-solid fa-envelope text-brand-orange mr-2"></i> info@evotour.vn</p>
                 </div>
             </div>
-
             <!-- Col 2 -->
             <div>
                 <h4 class="text-white font-bold mb-4 uppercase text-xs tracking-wider">Thông Tin Cần Biết</h4>
@@ -400,7 +366,6 @@
                     <li><a href="#" class="hover:text-white transition">Phương thức thanh toán</a></li>
                 </ul>
             </div>
-
             <!-- Col 3 -->
             <div>
                 <h4 class="text-white font-bold mb-4 uppercase text-xs tracking-wider">Danh Mục Tour</h4>
@@ -412,7 +377,6 @@
                     <li><a href="#" class="hover:text-white transition">Tour Châu Á / Châu Âu</a></li>
                 </ul>
             </div>
-
             <!-- Col 4 -->
             <div>
                 <h4 class="text-white font-bold mb-4 uppercase text-xs tracking-wider">Đăng Ký Nhận Tin</h4>
@@ -425,12 +389,10 @@
                 </form>
             </div>
         </div>
-
         <div class="bg-gray-950 py-4 text-center text-xs text-gray-500 border-t border-gray-800">
             © 2026 Evo Tour & Travel. Tất cả quyền được bảo lưu. Mẫu thử nghiệm GitHub Pages.
         </div>
     </footer>
-
     <!-- BOOKING MODAL -->
     <div id="bookingModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
         <div class="bg-white w-full max-w-lg rounded-2xl shadow-2xl overflow-hidden transform transition-all">
@@ -443,7 +405,6 @@
                     &times;
                 </button>
             </div>
-
             <!-- Modal Body -->
             <form id="bookingForm" onsubmit="confirmBooking(event)" class="p-5 space-y-4 text-xs">
                 <div>
@@ -452,7 +413,6 @@
                         --
                     </div>
                 </div>
-
                 <div class="grid grid-cols-2 gap-3">
                     <div>
                         <label class="block font-medium text-gray-700 mb-1">Ngày khởi hành *</label>
@@ -463,7 +423,6 @@
                         <input type="number" id="adultCount" min="1" value="1" onchange="calculateTotal()" class="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-brand-orange focus:outline-none">
                     </div>
                 </div>
-
                 <div class="grid grid-cols-2 gap-3">
                     <div>
                         <label class="block font-medium text-gray-700 mb-1">Họ và tên *</label>
@@ -474,12 +433,10 @@
                         <input type="tel" placeholder="0901234567" required class="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-brand-orange focus:outline-none">
                     </div>
                 </div>
-
                 <div>
                     <label class="block font-medium text-gray-700 mb-1">Email liên hệ</label>
                     <input type="email" placeholder="example@email.com" class="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-brand-orange focus:outline-none">
                 </div>
-
                 <div class="border-t border-gray-100 pt-3 flex justify-between items-center">
                     <div>
                         <span class="text-gray-500 block">Tổng tiền ước tính:</span>
@@ -493,23 +450,18 @@
             </form>
         </div>
     </div>
-
     <!-- TOAST NOTIFICATION CONTAINER -->
     <div id="toastContainer" class="fixed top-5 right-5 z-50 flex flex-col gap-2 pointer-events-none"></div>
-
     <script>
         // State
         let currentTourPrice = 0;
         let wishlistItems = new Set();
-
         // Filtering
         function filterCategory(category) {
             const cards = document.querySelectorAll('.tour-card');
             const buttons = document.querySelectorAll('.filter-btn');
-
             buttons.forEach(btn => btn.classList.remove('bg-brand-orange', 'text-white'));
             buttons.forEach(btn => btn.classList.add('bg-white', 'text-gray-700'));
-
             if(category === 'all') {
                 document.getElementById('btn-all').classList.add('bg-brand-orange', 'text-white');
                 cards.forEach(card => card.style.display = 'flex');
@@ -525,12 +477,10 @@
                 });
             }
         }
-
         // Live Search Filter
         function handleSearch() {
             const query = document.getElementById('searchInput').value.toLowerCase();
             const cards = document.querySelectorAll('.tour-card');
-
             cards.forEach(card => {
                 const title = card.querySelector('h3').innerText.toLowerCase();
                 if(title.includes(query)) {
@@ -540,7 +490,6 @@
                 }
             });
         }
-
         // Wishlist Toggle
         function toggleWishlist(id, btn) {
             const icon = btn.querySelector('i');
@@ -557,7 +506,6 @@
             }
             document.getElementById('wishlistBadge').innerText = wishlistItems.size;
         }
-
         function toggleWishlistModal() {
             if(wishlistItems.size === 0) {
                 showToast('Danh sách yêu thích của bạn đang trống!');
@@ -565,7 +513,6 @@
                 showToast(`Bạn đang có ${wishlistItems.size} tour yêu thích.`);
             }
         }
-
         // Booking Modal Handlers
         function openBookingModal(title, formattedPrice, rawPrice) {
             document.getElementById('modalTourTitle').innerText = title;
@@ -574,43 +521,36 @@
             calculateTotal();
             document.getElementById('bookingModal').classList.remove('hidden');
         }
-
         function closeBookingModal() {
             document.getElementById('bookingModal').classList.add('hidden');
         }
-
         function calculateTotal() {
             const count = parseInt(document.getElementById('adultCount').value) || 1;
             const total = count * currentTourPrice;
             document.getElementById('modalTotalPrice').innerText = total.toLocaleString('vi-VN') + 'đ';
         }
-
         function confirmBooking(e) {
             e.preventDefault();
             closeBookingModal();
             showToast('🎉 Đặt tour thành công! Nhân viên sẽ liên hệ lại quý khách.');
         }
-
         function handleSubscribe(e) {
             e.preventDefault();
             e.target.reset();
             showToast('Cảm ơn bạn đã đăng ký nhận tin từ Evo Tour!');
         }
-
         // Custom Toast Notification System
         function showToast(message) {
             const toastContainer = document.getElementById('toastContainer');
             const toast = document.createElement('div');
             toast.className = 'bg-gray-900 text-white text-xs px-4 py-3 rounded-xl shadow-2xl flex items-center gap-2 pointer-events-auto border border-gray-700 animate-bounce';
-            toast.innerHTML = `<i class="fa-solid fa-circle-check text-brand-orange text-sm"></i> <span>${message}</span>`;
-            
+            toast.innerHTML = `<i class="fa-solid fa-circle-check text-brand-orange text-sm"></i> <span>${message}</span>`;            
             toastContainer.appendChild(toast);
             setTimeout(() => {
                 toast.classList.add('opacity-0', 'transition-opacity', 'duration-300');
                 setTimeout(() => toast.remove(), 300);
             }, 3000);
         }
-
         function toggleMobileMenu() {
             showToast('Menu di động đang được phát triển.');
         }
