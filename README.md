@@ -1,17 +1,16 @@
-# travelwmehsu.github.io
 <!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TravelWithMe - 제주도 감성 힐링 3박 4일</title>
+    <title>Wanderlust Travel - 제주도 감성 힐링 3박 4일 (B안)</title>
     <!-- Tailwind CSS & FontAwesome CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Noto Sans KR', sans-serif; }
-        .gradient-bg { background: linear-gradient(135deg, #0ea5e9 0%, #2563eb 100%); }
+        .gradient-bg { background: linear-gradient(135deg, #10b981 0%, #059669 100%); }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased pb-20">
@@ -20,18 +19,18 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
             <div class="flex items-center space-x-2">
                 <div class="w-10 h-10 gradient-bg rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-md">
-                    HSU
+                    W
                 </div>
-                <span class="font-extrabold text-xl tracking-tight text-slate-900">TravelWith<span class="text-sky-600">Me</span></span>
+                <span class="font-extrabold text-xl tracking-tight text-slate-900">Wanderlust<span class="text-emerald-600">Travel</span></span>
             </div>
             <nav class="hidden md:flex space-x-8 font-medium text-sm text-slate-600">
-                <a href="#overview" class="hover:text-sky-600">개요</a>
-                <a href="#itinerary" class="hover:text-sky-600">일정표</a>
-                <a href="#highlights" class="hover:text-sky-600">핵심 포인트</a>
-                <a href="#reviews" class="hover:text-sky-600">이용 후기</a>
+                <a href="#overview" class="hover:text-emerald-600">개요</a>
+                <a href="#itinerary" class="hover:text-emerald-600">일정표</a>
+                <a href="#highlights" class="hover:text-emerald-600">핵심 포인트</a>
+                <a href="#reviews" class="hover:text-emerald-600">이용 후기</a>
             </nav>
             <div class="flex items-center space-x-3 text-sm font-semibold text-slate-700">
-                <i class="fa-solid fa-phone text-sky-600"></i>
+                <i class="fa-solid fa-phone text-emerald-600"></i>
                 <span>1588-1234</span>
             </div>
         </div>
@@ -47,13 +46,13 @@
             </h1>
             <div class="flex flex-wrap items-center gap-4 mt-2 text-sm text-slate-600">
                 <div class="flex items-center text-amber-500 font-bold">
-                    <i class="fa-solid fa-star mr-1"></i> 4.95 <span class="text-slate-400 font-normal ml-1">(369개 후기)</span>
+                    <i class="fa-solid fa-star mr-1"></i> 4.95 <span class="text-slate-400 font-normal ml-1">(240개 후기)</span>
                 </div>
                 <div class="flex items-center"><i class="fa-solid fa-location-dot text-rose-500 mr-1.5"></i> 대한민국 제주도</div>
-                <div class="flex items-center"><i class="fa-solid fa-clock text-sky-500 mr-1.5"></i> 3박 4일</div>
+                <div class="flex items-center"><i class="fa-solid fa-clock text-emerald-500 mr-1.5"></i> 3박 4일</div>
             </div>
         </div>
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">          
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">            
             <!-- LEFT GALLERY -->
             <div class="lg:col-span-2 space-y-4">
                 <div class="relative h-[340px] sm:h-[420px] rounded-2xl overflow-hidden shadow-lg">
@@ -69,27 +68,27 @@
                     <img onclick="document.getElementById('mainImage').src=this.src" class="h-20 w-full object-cover rounded-xl cursor-pointer hover:opacity-80 transition" src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=400&q=80">
                 </div>
             </div>
-            <!-- RIGHT PRICING BOX (VARIANT A: TOTAL PRICE 399,000 KRW) -->
+            <!-- RIGHT PRICING BOX (VARIANT B: PER-DAY PRICE 99,750 KRW - NO TOTAL PRICE) -->
             <div class="lg:col-span-1">
                 <div class="bg-white rounded-2xl shadow-xl border border-slate-200 p-6 sticky top-[80px]">                    
-                    <!-- PRICE DISPLAY A -->
-                    <div class="mb-6 p-4 rounded-xl bg-slate-50 border border-slate-100">
-                        <div class="text-xs text-slate-500 font-medium uppercase mb-1">3박 4일 전 일정 총액</div>
+                    <!-- PRICE DISPLAY B -->
+                    <div class="mb-6 p-4 rounded-xl bg-emerald-50 border border-emerald-100">
+                        <div class="text-xs text-emerald-700 font-bold uppercase mb-1"><i class="fa-solid fa-piggy-bank mr-1"></i>부담 없는 1일 분할 가격</div>
                         <div class="flex items-baseline space-x-1">
-                            <span class="text-3xl font-extrabold text-sky-600">₩399,000</span>
-                            <span class="text-xs text-slate-500">/ 1인</span>
+                            <span class="text-xs font-semibold text-slate-500">하루</span>
+                            <span class="text-3xl font-extrabold text-emerald-600">₩99,750~</span>
                         </div>
-                        <div class="text-[11px] text-slate-400 mt-1"><i class="fa-solid fa-circle-info mr-1"></i>항공, 4성급 호텔, 주요 입장권 포함</div>
+                        <div class="text-[11px] text-emerald-600 mt-1"><i class="fa-solid fa-check mr-1"></i>부담 없는 가격으로 즐기는 힐링 제주 여행</div>
                     </div>
                     <div class="space-y-4 mb-6 text-sm">
                         <!-- CALENDAR DATE PICKER -->
                         <div>
-                            <label class="block font-medium text-slate-700 mb-1.5"><i class="fa-regular fa-calendar-days text-sky-600 mr-1.5"></i>출발일 선택</label>
-                            <input type="date" class="w-full border border-slate-300 rounded-xl px-3 py-2.5 bg-white text-slate-700 font-medium cursor-pointer focus:ring-2 focus:ring-sky-500 focus:outline-none" value="2026-10-15">
+                            <label class="block font-medium text-slate-700 mb-1.5"><i class="fa-regular fa-calendar-days text-emerald-600 mr-1.5"></i>출발일 선택</label>
+                            <input type="date" class="w-full border border-slate-300 rounded-xl px-3 py-2.5 bg-white text-slate-700 font-medium cursor-pointer focus:ring-2 focus:ring-emerald-500 focus:outline-none" value="2026-10-15">
                         </div>
                         <!-- PEOPLE SELECTOR -->
                         <div>
-                            <label class="block font-medium text-slate-700 mb-1.5"><i class="fa-solid fa-users text-sky-600 mr-1.5"></i>인원 선택</label>
+                            <label class="block font-medium text-slate-700 mb-1.5"><i class="fa-solid fa-users text-emerald-600 mr-1.5"></i>인원 선택</label>
                             <div class="flex items-center justify-between border border-slate-300 rounded-xl p-2.5">
                                 <span class="text-slate-700 font-medium text-sm pl-2">인원</span>
                                 <span class="font-bold text-slate-900 px-3">1명</span>
@@ -97,7 +96,7 @@
                         </div>
                     </div>
                     <!-- URGENT CTA BUTTON -->
-                    <button onclick="handleBooking('A')" class="w-full gradient-bg hover:opacity-95 text-white font-bold py-3.5 rounded-xl shadow-lg shadow-sky-500/25 transition flex items-center justify-center space-x-2">
+                    <button onclick="handleBooking('B')" class="w-full gradient-bg hover:opacity-95 text-white font-bold py-3.5 rounded-xl shadow-lg shadow-emerald-500/25 transition flex items-center justify-center space-x-2">
                         <span>🔥 마감 임박! 지금 바로 예약하기</span>
                     </button>
                 </div>
@@ -121,7 +120,7 @@
                 <!-- ITINERARY -->
                 <section id="itinerary" class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
                     <h2 class="text-xl font-bold text-slate-900 mb-6 flex items-center">
-                        <i class="fa-solid fa-route text-sky-600 mr-2.5"></i> 트렌디 요약 일정표 (3박 4일)
+                        <i class="fa-solid fa-route text-emerald-600 mr-2.5"></i> 트렌디 요약 일정표 (3박 4일)
                     </h2>
                     <div class="space-y-4 text-sm text-slate-600">
                         <p><strong>1일차:</strong> 제주공항 도착 - 애월 해안도로 드라이브 - 감성 카페거리 Check-in - 용두암 일몰 감상</p>
@@ -133,7 +132,7 @@
                 <!-- REVIEWS SECTION -->
                 <section id="reviews" class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
                     <h2 class="text-xl font-bold text-slate-900 mb-4 flex items-center">
-                        <i class="fa-solid fa-comments text-sky-500 mr-2.5"></i> 실제 이용객 리얼 후기
+                        <i class="fa-solid fa-comments text-emerald-500 mr-2.5"></i> 실제 이용객 리얼 후기
                     </h2>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
                         <div class="p-4 bg-slate-50 rounded-xl border border-slate-100">
