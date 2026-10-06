@@ -4,121 +4,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evo Tour - 마감 임박 특가 투어 (B안: 1일 기준 가격)</title>
+    <title>Wanderlust Travel - 다낭 · 호이안 3박 4일 투어 (A안)</title>
+    <!-- Tailwind CSS & FontAwesome CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
         body { font-family: 'Noto Sans KR', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #0ea5e9 0%, #2563eb 100%); }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
-    <!-- Header -->
-    <header class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+<body class="bg-slate-50 text-slate-800 antialiased pb-20">
+    <!-- HEADER NAVIGATION -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
             <div class="flex items-center space-x-2">
-                <i class="fa-solid fa-plane-departure text-2xl text-cyan-500"></i>
-                <span class="text-xl font-bold text-blue-900">Evo <span class="text-cyan-500">Tour</span></span>
+                <div class="w-10 h-10 gradient-bg rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-md">
+                    W
+                </div>
+                <span class="font-extrabold text-xl tracking-tight text-slate-900">Wanderlust<span class="text-sky-600">Travel</span></span>
             </div>
-            <div class="flex items-center space-x-6 text-sm text-gray-600">
-                <a href="#" class="hover:text-orange-500"><i class="fa-regular fa-heart text-lg mr-1"></i> 관심 상품 (<span id="wishlist-count">0</span>)</a>
-                <a href="#" class="hover:text-orange-500"><i class="fa-regular fa-user text-lg mr-1"></i> 로그인</a>
+            <nav class="hidden md:flex space-x-8 font-medium text-sm text-slate-600">
+                <a href="#overview" class="hover:text-sky-600">개요</a>
+                <a href="#itinerary" class="hover:text-sky-600">일정표</a>
+                <a href="#highlights" class="hover:text-sky-600">핵심 포인트</a>
+            </nav>
+            <div class="flex items-center space-x-3 text-sm font-semibold text-slate-700">
+                <i class="fa-solid fa-phone text-sky-600"></i>
+                <span>1588-1234</span>
             </div>
         </div>
     </header>
-    <!-- Main Content -->
-    <main class="max-w-6xl mx-auto px-4 py-8">
-        <div class="text-center mb-8">
-            <h1 class="text-2xl font-bold text-gray-900 mb-2">
-                마감 임박 <span class="text-orange-500">특가 투어</span>
+   <!-- MAIN PRODUCT SECTION -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">     
+        <div class="mb-4">
+            <div class="flex items-center space-x-2 text-xs text-slate-500 mb-2">
+                <span>홈</span> <span>/</span> <span>동남아 여행</span> <span>/</span> <span class="text-slate-800 font-medium">베트남 다낭</span>
+            </div>
+            <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                다낭 · 호이안 · 바나힐 · 골든브릿지 힐링 패키지 (3박 4일)
             </h1>
-            <p class="text-sm text-gray-500">하루 커피 몇 잔 가격으로 떠나는 부담 없는 힐링 여행!</p>
+            <div class="flex flex-wrap items-center gap-4 mt-2 text-sm text-slate-600">
+                <div class="flex items-center text-amber-500 font-bold">
+                    <i class="fa-solid fa-star mr-1"></i> 4.9 <span class="text-slate-400 font-normal ml-1">(128개 후기)</span>
+                </div>
+                <div class="flex items-center"><i class="fa-solid fa-location-dot text-rose-500 mr-1.5"></i> 베트남 다낭</div>
+                <div class="flex items-center"><i class="fa-solid fa-clock text-sky-500 mr-1.5"></i> 3박 4일</div>
+            </div>
         </div>
-        <!-- Tour Grid (Variant B: Per-Day Price Display) -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">         
-            <!-- Tour 1 -->
-            <div class="bg-white rounded-lg shadow border border-emerald-200 hover:shadow-md transition">
-                <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=500" alt="Cambodia" class="w-full h-44 object-cover rounded-t-lg">
-                <div class="p-4">
-                    <h3 class="font-bold text-sm mb-2 text-gray-800 line-clamp-2">캄보디아 앙코르와트 4박 5일 패키지</h3>
-                    <p class="text-xs text-gray-500 mb-1"><i class="fa-regular fa-calendar mr-1"></i> 출발일: 매주 일요일</p>
-                    <p class="text-xs text-gray-500 mb-3"><i class="fa-regular fa-clock mr-1"></i> 여행 기간: 4박 5일</p>
-                    <div class="flex items-center justify-between border-t pt-3">
-                        <div>
-                            <span class="text-[10px] text-emerald-600 font-semibold bg-emerald-50 px-1.5 py-0.5 rounded">1일 기준</span>
-                            <div class="text-lg font-bold text-emerald-600">하루 ₩79,580~</div>
-                            <span class="text-[11px] text-gray-400">(총액 ₩397,900)</span>
-                        </div>
-                        <button onclick="recordBooking('B', '캄보디아')" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-3 py-2 rounded">
-                            예약하기
-                        </button>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+                     <!-- LEFT GALLERY -->
+            <div class="lg:col-span-2 space-y-4">
+                <div class="relative h-[340px] sm:h-[420px] rounded-2xl overflow-hidden shadow-lg">
+                    <img id="mainImage" src="https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?auto=format&fit=crop&w=1200&q=80" alt="바나힐" class="w-full h-full object-cover">
+                    <div class="absolute top-4 left-4 bg-slate-900/80 text-white text-xs font-semibold px-3 py-1.5 rounded-full flex items-center gap-1.5">
+                        <i class="fa-solid fa-fire text-amber-400"></i> 베스트셀러 투어
                     </div>
+                </div>
+                <div class="grid grid-cols-4 gap-3">
+                    <img onclick="document.getElementById('mainImage').src=this.src" class="h-20 w-full object-cover rounded-xl cursor-pointer hover:opacity-80" src="https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?auto=format&fit=crop&w=400&q=80">
+                    <img onclick="document.getElementById('mainImage').src=this.src" class="h-20 w-full object-cover rounded-xl cursor-pointer hover:opacity-80" src="https://images.unsplash.com/photo-1583417319070-4a69db38a482?auto=format&fit=crop&w=400&q=80">
+                    <img onclick="document.getElementById('mainImage').src=this.src" class="h-20 w-full object-cover rounded-xl cursor-pointer hover:opacity-80" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=80">
+                    <img onclick="document.getElementById('mainImage').src=this.src" class="h-20 w-full object-cover rounded-xl cursor-pointer hover:opacity-80" src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=400&q=80">
                 </div>
             </div>
-            <!-- Tour 2 -->
-            <div class="bg-white rounded-lg shadow border border-emerald-200 hover:shadow-md transition">
-                <img src="https://images.unsplash.com/photo-1528127269322-539801943592?w=500" alt="Ha Long Bay" class="w-full h-44 object-cover rounded-t-lg">
-                <div class="p-4">
-                    <h3 class="font-bold text-sm mb-2 text-gray-800 line-clamp-2">하노이 & 하롱베이 힐링 4일 투어</h3>
-                    <p class="text-xs text-gray-500 mb-1"><i class="fa-regular fa-calendar mr-1"></i> 출발일: 매주 월요일</p>
-                    <p class="text-xs text-gray-500 mb-3"><i class="fa-regular fa-clock mr-1"></i> 여행 기간: 3박 4일</p>
-                    <div class="flex items-center justify-between border-t pt-3">
-                        <div>
-                            <span class="text-[10px] text-emerald-600 font-semibold bg-emerald-50 px-1.5 py-0.5 rounded">1일 기준</span>
-                            <div class="text-lg font-bold text-emerald-600">하루 ₩160,000~</div>
-                            <span class="text-[11px] text-gray-400">(총액 ₩640,000)</span>
+            <!-- RIGHT PRICING BOX (VARIANT A: TOTAL PRICE ONLY) -->
+            <div class="lg:col-span-1">
+                <div class="bg-white rounded-2xl shadow-xl border border-slate-200 p-6 sticky top-[80px]">
+                    <!-- PRICE DISPLAY A -->
+                    <div class="mb-6 p-4 rounded-xl bg-slate-50 border border-slate-100">
+                        <div class="text-xs text-slate-500 font-medium uppercase mb-1">3박 4일 전 일정 총액</div>
+                        <div class="flex items-baseline space-x-1">
+                            <span class="text-3xl font-extrabold text-sky-600">₩599,000</span>
+                            <span class="text-xs text-slate-500">/ 1인</span>
                         </div>
-                        <button onclick="recordBooking('B', '하노이')" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-3 py-2 rounded">
-                            예약하기
-                        </button>
+                        <div class="text-[11px] text-slate-400 mt-1"><i class="fa-solid fa-circle-info mr-1"></i>세금, 유류할증료 및 입장료 포함</div>
                     </div>
+                    <div class="space-y-4 mb-6 text-sm">
+                        <div>
+                            <label class="block font-medium text-slate-700 mb-1.5"><i class="fa-regular fa-calendar text-sky-600 mr-1.5"></i>출발일 선택</label>
+                            <select class="w-full border border-slate-300 rounded-xl px-3 py-2.5 bg-white">
+                                <option>매주 목요일 출발 (확정)</option>
+                                <option>매주 토요일 출발</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block font-medium text-slate-700 mb-1.5"><i class="fa-solid fa-users text-sky-600 mr-1.5"></i>인원 선택</label>
+                            <div class="flex items-center justify-between border border-slate-300 rounded-xl p-2">
+                                <span class="text-slate-600 text-xs pl-2">성인 (만 12세 이상)</span>
+                                <span class="font-bold text-slate-900 px-3">1명</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button onclick="handleBooking()" class="w-full gradient-bg hover:opacity-95 text-white font-bold py-3.5 rounded-xl shadow-lg shadow-sky-500/25 transition">
+                        지금 예약하기
+                    </button>
                 </div>
             </div>
-            <!-- Tour 3 -->
-            <div class="bg-white rounded-lg shadow border border-emerald-200 hover:shadow-md transition">
-                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500" alt="Phan Thiet" class="w-full h-44 object-cover rounded-t-lg">
-                <div class="p-4">
-                    <h3 class="font-bold text-sm mb-2 text-gray-800 line-clamp-2">판티엣 & 무이네 사구 3일 투어</h3>
-                    <p class="text-xs text-gray-500 mb-1"><i class="fa-regular fa-calendar mr-1"></i> 출발일: 매주 토요일</p>
-                    <p class="text-xs text-gray-500 mb-3"><i class="fa-regular fa-clock mr-1"></i> 여행 기간: 2박 3일</p>
-                    <div class="flex items-center justify-between border-t pt-3">
-                        <div>
-                            <span class="text-[10px] text-emerald-600 font-semibold bg-emerald-50 px-1.5 py-0.5 rounded">1일 기준</span>
-                            <div class="text-lg font-bold text-emerald-600">하루 ₩66,660~</div>
-                            <span class="text-[11px] text-gray-400">(총액 ₩200,000)</span>
-                        </div>
-                        <button onclick="recordBooking('B', '판티엣')" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-3 py-2 rounded">
-                            예약하기
-                        </button>
+        </div>
+        <!-- DETAILS -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div class="lg:col-span-2 space-y-8">
+                <section id="highlights" class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                    <h2 class="text-xl font-bold text-slate-900 mb-4 flex items-center">
+                        <i class="fa-solid fa-wand-magic-sparkles text-amber-500 mr-2.5"></i> 핵심 여행 포인트
+                    </h2>
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-slate-700">
+                        <li class="flex items-center space-x-2"><i class="fa-solid fa-circle-check text-emerald-500"></i><span>미케비치 앞 4성급 호텔 숙박</span></li>
+                        <li class="flex items-center space-x-2"><i class="fa-solid fa-circle-check text-emerald-500"></i><span>바나힐 왕복 케이블카 & 골든브릿지</span></li>
+                        <li class="flex items-center space-x-2"><i class="fa-solid fa-circle-check text-emerald-500"></i><span>호이안 야경 투어 & 등불 체험</span></li>
+                        <li class="flex items-center space-x-2"><i class="fa-solid fa-circle-check text-emerald-500"></i><span>전 일정 최신형 리무진 차량 이동</span></li>
+                    </ul>
+                </section>
+                <section id="itinerary" class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                    <h2 class="text-xl font-bold text-slate-900 mb-6 flex items-center">
+                        <i class="fa-solid fa-route text-sky-600 mr-2.5"></i> 요약 일정표 (3박 4일)
+                    </h2>
+                    <div class="space-y-4 text-sm text-slate-600">
+                        <p><strong>1일차:</strong> 공항 미팅 - 다낭 도착 - 손짜반도 - 미케비치 자유시간</p>
+                        <p><strong>2일차:</strong> 바나힐 국립공원 - 골든브릿지 - 판타지파크 테마파크</p>
+                        <p><strong>3일차:</strong> 오행산 탐방 - 호이안 옛거리 탐방 & 야경 감상</p>
+                        <p><strong>4일차:</strong> 한시장 기념품 쇼핑 - 다낭 공항 이동 및 귀국</p>
                     </div>
-                </div>
-            </div>
-            <!-- Tour 4 -->
-            <div class="bg-white rounded-lg shadow border border-emerald-200 hover:shadow-md transition">
-                <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=500" alt="Nha Trang" class="w-full h-44 object-cover rounded-t-lg">
-                <div class="p-4">
-                    <h3 class="font-bold text-sm mb-2 text-gray-800 line-clamp-2">나트랑 빈펄 리조트 & 호핑 3일</h3>
-                    <p class="text-xs text-gray-500 mb-1"><i class="fa-regular fa-calendar mr-1"></i> 출발일: 매주 월요일</p>
-                    <p class="text-xs text-gray-500 mb-3"><i class="fa-regular fa-clock mr-1"></i> 여행 기간: 2박 3일</p>
-                    <div class="flex items-center justify-between border-t pt-3">
-                        <div>
-                            <span class="text-[10px] text-emerald-600 font-semibold bg-emerald-50 px-1.5 py-0.5 rounded">1일 기준</span>
-                            <div class="text-lg font-bold text-emerald-600">하루 ₩216,660~</div>
-                            <span class="text-[11px] text-gray-400">(총액 ₩650,000)</span>
-                        </div>
-                        <button onclick="recordBooking('B', '나트랑')" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-3 py-2 rounded">
-                            예약하기
-                        </button>
-                    </div>
-                </div>
+                </section>
             </div>
         </div>
     </main>
     <script>
-        function recordBooking(variant, tourName) {
-            alert(`[실험 B] '${tourName}' 상품 예약 클릭이 기록되었습니다.`);
-            let clicks = localStorage.getItem('clicks_variant_B') || 0;
-            localStorage.setItem('clicks_variant_B', parseInt(clicks) + 1);
+        function handleBooking() {
+            alert("[A/B Test Variant A] '지금 예약하기' 클릭이 기록되었습니다.");
+            let count = localStorage.getItem('clicks_variant_A') || 0;
+            localStorage.setItem('clicks_variant_A', parseInt(count) + 1);
         }
     </script>
 </body>
