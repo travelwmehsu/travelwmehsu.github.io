@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wanderlust Travel - 다낭 · 호이안 3박 4일 투어 (A안)</title>
+    <title>TravelWithMe - 다낭 · 호이안 3박 4일 투어 (A안)</title>
     <!-- Tailwind CSS & FontAwesome CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -20,7 +20,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
             <div class="flex items-center space-x-2">
                 <div class="w-10 h-10 gradient-bg rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-md">
-                    W
+                    HSU
                 </div>
                 <span class="font-extrabold text-xl tracking-tight text-slate-900">Wanderlust<span class="text-sky-600">Travel</span></span>
             </div>
@@ -46,13 +46,13 @@
             </h1>
             <div class="flex flex-wrap items-center gap-4 mt-2 text-sm text-slate-600">
                 <div class="flex items-center text-amber-500 font-bold">
-                    <i class="fa-solid fa-star mr-1"></i> 4.9 <span class="text-slate-400 font-normal ml-1">(128개 후기)</span>
+                    <i class="fa-solid fa-star mr-1"></i> 4.9 <span class="text-slate-400 font-normal ml-1">(696개 후기)</span>
                 </div>
                 <div class="flex items-center"><i class="fa-solid fa-location-dot text-rose-500 mr-1.5"></i> 베트남 다낭</div>
                 <div class="flex items-center"><i class="fa-solid fa-clock text-sky-500 mr-1.5"></i> 3박 4일</div>
             </div>
         </div>
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">           
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">            
             <!-- LEFT GALLERY -->
             <div class="lg:col-span-2 space-y-4">
                 <div class="relative h-[340px] sm:h-[420px] rounded-2xl overflow-hidden shadow-lg">
