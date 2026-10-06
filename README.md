@@ -13,10 +13,6 @@
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
-    <!-- A/B Test Variant Indicator -->
-    <div class="bg-blue-900 text-white text-xs py-2 text-center font-bold">
-        🧪 [실험 조건 A] 전체 금액(총액) 강조 방식 (Total Price Framing)
-    </div>
     <!-- Header -->
     <header class="bg-white shadow-sm sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
