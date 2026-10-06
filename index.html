@@ -22,7 +22,7 @@
                 <div class="w-10 h-10 gradient-bg rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-md">
                     HSU
                 </div>
-                <span class="font-extrabold text-xl tracking-tight text-slate-900">Wanderlust<span class="text-sky-600">Travel</span></span>
+                <span class="font-extrabold text-xl tracking-tight text-slate-900">TravelWith<span class="text-sky-600">Me</span></span>
             </div>
             <nav class="hidden md:flex space-x-8 font-medium text-sm text-slate-600">
                 <a href="#overview" class="hover:text-sky-600">개요</a>
