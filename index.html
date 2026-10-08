@@ -14,7 +14,6 @@
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased pb-20">
-
     <!-- HEADER NAVIGATION -->
     <header class="bg-white border-b border-slate-200 sticky top-0 z-40">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
@@ -36,10 +35,8 @@
             </div>
         </div>
     </header>
-
     <!-- MAIN PRODUCT SECTION -->
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
-        
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">        
         <div class="mb-4">
             <div class="flex items-center space-x-2 text-xs text-slate-500 mb-2">
                 <span>홈</span> <span>/</span> <span>국내 여행</span> <span>/</span> <span class="text-slate-800 font-medium">제주특별자치도</span>
@@ -55,29 +52,25 @@
                 <div class="flex items-center"><i class="fa-solid fa-clock text-sky-500 mr-1.5"></i> 3박 4일</div>
             </div>
         </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
-            
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">            
             <!-- LEFT GALLERY (CUSTOM IMAGES) -->
             <div class="lg:col-span-2 space-y-4">
                 <div class="relative h-[340px] sm:h-[420px] rounded-2xl overflow-hidden shadow-lg bg-slate-100">
-                    <img id="mainImage" src="image_3.png" alt="제주도 풍경" class="w-full h-full object-cover transition-all duration-300">
+                    <img id="mainImage" src="IMG_0796.webp" alt="제주도 풍경" class="w-full h-full object-cover transition-all duration-300">
                     <div class="absolute top-4 left-4 bg-slate-900/80 text-white text-xs font-semibold px-3 py-1.5 rounded-full flex items-center gap-1.5">
                         <i class="fa-solid fa-fire text-amber-400"></i> 요즘 가장 핫한 제주 패키지
                     </div>
                 </div>
                 <div class="grid grid-cols-4 gap-3">
-                    <img onclick="document.getElementById('mainImage').src=this.src" class="h-20 w-full object-cover rounded-xl cursor-pointer hover:opacity-80 border-2 border-transparent hover:border-sky-500 transition" src="image_3.png" alt="제주 전경">
-                    <img onclick="document.getElementById('mainImage').src=this.src" class="h-20 w-full object-cover rounded-xl cursor-pointer hover:opacity-80 border-2 border-transparent hover:border-sky-500 transition" src="image_4.png" alt="산방산 유채꽃">
-                    <img onclick="document.getElementById('mainImage').src=this.src" class="h-20 w-full object-cover rounded-xl cursor-pointer hover:opacity-80 border-2 border-transparent hover:border-sky-500 transition" src="image_5.png" alt="성산일출봉 해안">
-                    <img onclick="document.getElementById('mainImage').src=this.src" class="h-20 w-full object-cover rounded-xl cursor-pointer hover:opacity-80 border-2 border-transparent hover:border-sky-500 transition" src="image_6.png" alt="돌하르방 해변">
+                    <img onclick="document.getElementById('mainImage').src=this.src" class="h-20 w-full object-cover rounded-xl cursor-pointer hover:opacity-80 border-2 border-transparent hover:border-sky-500 transition" src="IMG_0796.webp" alt="제주 전경">
+                    <img onclick="document.getElementById('mainImage').src=this.src" class="h-20 w-full object-cover rounded-xl cursor-pointer hover:opacity-80 border-2 border-transparent hover:border-sky-500 transition" src="IMG_0797.webp" alt="산방산 유채꽃">
+                    <img onclick="document.getElementById('mainImage').src=this.src" class="h-20 w-full object-cover rounded-xl cursor-pointer hover:opacity-80 border-2 border-transparent hover:border-sky-500 transition" src="IMG_0798.webp" alt="성산일출봉 해안">
+                    <img onclick="document.getElementById('mainImage').src=this.src" class="h-20 w-full object-cover rounded-xl cursor-pointer hover:opacity-80 border-2 border-transparent hover:border-sky-500 transition" src="IMG_079.webp" alt="돌하르방 해변">
                 </div>
             </div>
-
             <!-- RIGHT PRICING BOX (VARIANT B: DAILY PRICE - NO TOTAL PRICE) -->
             <div class="lg:col-span-1">
-                <div class="bg-white rounded-2xl shadow-xl border border-slate-200 p-6 sticky top-[80px]">
-                    
+                <div class="bg-white rounded-2xl shadow-xl border border-slate-200 p-6 sticky top-[80px]">                    
                     <!-- PRICE DISPLAY B -->
                     <div class="mb-6 p-4 rounded-xl bg-sky-50 border border-sky-100">
                         <div class="text-xs text-sky-800 font-bold uppercase mb-1"><i class="fa-solid fa-piggy-bank mr-1"></i>부담 없는 1일 분할 가격</div>
@@ -87,7 +80,6 @@
                         </div>
                         <div class="text-[11px] text-sky-700 mt-1"><i class="fa-solid fa-check mr-1"></i>부담 없는 가격으로 즐기는 힐링 제주 여행</div>
                     </div>
-
                     <div class="space-y-4 mb-6 text-sm">
                         <!-- CALENDAR DATE PICKER -->
                         <div>
@@ -107,7 +99,6 @@
                             </select>
                         </div>
                     </div>
-
                     <!-- URGENT CTA BUTTON -->
                     <button onclick="handleBooking('B')" class="w-full gradient-bg hover:opacity-95 text-white font-bold py-3.5 rounded-xl shadow-lg shadow-sky-500/25 transition flex items-center justify-center space-x-2">
                         <span>🔥 마감 임박! 지금 바로 예약하기</span>
@@ -115,12 +106,10 @@
                 </div>
             </div>
         </div>
-
         <!-- DETAILS & REVIEWS -->
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div class="lg:col-span-2 space-y-8">
-                
-                <!-- HIGHLIGHTS -->
+                           <!-- HIGHLIGHTS -->
                 <section id="highlights" class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
                     <h2 class="text-xl font-bold text-slate-900 mb-4 flex items-center">
                         <i class="fa-solid fa-wand-magic-sparkles text-amber-500 mr-2.5"></i> 제주 여행 핵심 포인트
@@ -132,7 +121,6 @@
                         <li class="flex items-center space-x-2"><i class="fa-solid fa-circle-check text-emerald-500"></i><span>제주 명물 흑돼지 구이 & 해산물 특식 제공</span></li>
                     </ul>
                 </section>
-
                 <!-- ITINERARY -->
                 <section id="itinerary" class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
                     <h2 class="text-xl font-bold text-slate-900 mb-6 flex items-center">
@@ -145,7 +133,6 @@
                         <p><strong>4일차:</strong> 사려니 숲길 힐링 산책 - 동문시장 오메기떡 & 감귤 기념품 쇼핑 - 제주공항 출발</p>
                     </div>
                 </section>
-
                 <!-- REVIEWS SECTION -->
                 <section id="reviews" class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
                     <h2 class="text-xl font-bold text-slate-900 mb-4 flex items-center">
@@ -169,20 +156,16 @@
                         </div>
                     </div>
                 </section>
-
             </div>
         </div>
     </main>
-
     <script>
         const DAILY_PRICE = 99750;
-
         function updatePriceB() {
             const count = parseInt(document.getElementById('peopleSelect').value);
             const dailyTotal = DAILY_PRICE * count;
             document.getElementById('priceDisplay').innerText = '₩' + dailyTotal.toLocaleString() + '~';
         }
-
         function handleBooking(variant) {
             const count = document.getElementById('peopleSelect').value;
             alert(`🎉 예약 요청이 성공적으로 완료되었습니다!\n\n- 예약 인원: ${count}명\n즐겁고 행복한 제주 여행이 되시길 바랍니다. ✈️🌸`);
