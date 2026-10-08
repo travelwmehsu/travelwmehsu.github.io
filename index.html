@@ -65,7 +65,7 @@
                     <img onclick="document.getElementById('mainImage').src=this.src" class="h-20 w-full object-cover rounded-xl cursor-pointer hover:opacity-80 border-2 border-transparent hover:border-sky-500 transition" src="IMG_0796.webp" alt="제주 전경">
                     <img onclick="document.getElementById('mainImage').src=this.src" class="h-20 w-full object-cover rounded-xl cursor-pointer hover:opacity-80 border-2 border-transparent hover:border-sky-500 transition" src="IMG_0797.webp" alt="산방산 유채꽃">
                     <img onclick="document.getElementById('mainImage').src=this.src" class="h-20 w-full object-cover rounded-xl cursor-pointer hover:opacity-80 border-2 border-transparent hover:border-sky-500 transition" src="IMG_0798.webp" alt="성산일출봉 해안">
-                    <img onclick="document.getElementById('mainImage').src=this.src" class="h-20 w-full object-cover rounded-xl cursor-pointer hover:opacity-80 border-2 border-transparent hover:border-sky-500 transition" src="IMG_079.webp" alt="돌하르방 해변">
+                    <img onclick="document.getElementById('mainImage').src=this.src" class="h-20 w-full object-cover rounded-xl cursor-pointer hover:opacity-80 border-2 border-transparent hover:border-sky-500 transition" src="IMG_0799.webp" alt="돌하르방 해변">
                 </div>
             </div>
             <!-- RIGHT PRICING BOX (VARIANT B: DAILY PRICE - NO TOTAL PRICE) -->
