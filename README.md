@@ -56,16 +56,16 @@
             <!-- LEFT GALLERY (CUSTOM IMAGES) -->
             <div class="lg:col-span-2 space-y-4">
                 <div class="relative h-[340px] sm:h-[420px] rounded-2xl overflow-hidden shadow-lg bg-slate-100">
-                    <img id="mainImage" src="image_3.png" alt="제주도 풍경" class="w-full h-full object-cover transition-all duration-300">
+                    <img id="mainImage" src="IMG_0796.webp" alt="제주도 풍경" class="w-full h-full object-cover transition-all duration-300">
                     <div class="absolute top-4 left-4 bg-slate-900/80 text-white text-xs font-semibold px-3 py-1.5 rounded-full flex items-center gap-1.5">
                         <i class="fa-solid fa-fire text-amber-400"></i> 요즘 가장 핫한 제주 패키지
                     </div>
                 </div>
                 <div class="grid grid-cols-4 gap-3">
-                    <img onclick="document.getElementById('mainImage').src=this.src" class="h-20 w-full object-cover rounded-xl cursor-pointer hover:opacity-80 border-2 border-transparent hover:border-sky-500 transition" src="image_3.png" alt="제주 전경">
-                    <img onclick="document.getElementById('mainImage').src=this.src" class="h-20 w-full object-cover rounded-xl cursor-pointer hover:opacity-80 border-2 border-transparent hover:border-sky-500 transition" src="image_4.png" alt="산방산 유채꽃">
-                    <img onclick="document.getElementById('mainImage').src=this.src" class="h-20 w-full object-cover rounded-xl cursor-pointer hover:opacity-80 border-2 border-transparent hover:border-sky-500 transition" src="image_5.png" alt="성산일출봉 해안">
-                    <img onclick="document.getElementById('mainImage').src=this.src" class="h-20 w-full object-cover rounded-xl cursor-pointer hover:opacity-80 border-2 border-transparent hover:border-sky-500 transition" src="image_6.png" alt="돌하르방 해변">
+                    <img onclick="document.getElementById('mainImage').src=this.src" class="h-20 w-full object-cover rounded-xl cursor-pointer hover:opacity-80 border-2 border-transparent hover:border-sky-500 transition" src="IMG_0796.webp" alt="제주 전경">
+                    <img onclick="document.getElementById('mainImage').src=this.src" class="h-20 w-full object-cover rounded-xl cursor-pointer hover:opacity-80 border-2 border-transparent hover:border-sky-500 transition" src="IMG_0797.webp" alt="산방산 유채꽃">
+                    <img onclick="document.getElementById('mainImage').src=this.src" class="h-20 w-full object-cover rounded-xl cursor-pointer hover:opacity-80 border-2 border-transparent hover:border-sky-500 transition" src="IMG_0798.webp" alt="성산일출봉 해안">
+                    <img onclick="document.getElementById('mainImage').src=this.src" class="h-20 w-full object-cover rounded-xl cursor-pointer hover:opacity-80 border-2 border-transparent hover:border-sky-500 transition" src="IMG_079.webp" alt="돌하르방 해변">
                 </div>
             </div>
             <!-- RIGHT PRICING BOX (VARIANT B: DAILY PRICE - NO TOTAL PRICE) -->
