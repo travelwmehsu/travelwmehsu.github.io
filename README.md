@@ -96,7 +96,7 @@
                 <label class="block font-medium text-slate-700 mb-1.5"><i class="fa-solid fa-users text-sky-600 mr-1.5"></i>인원 선택</label>
                 <select id="peopleSelect" onchange="updatePriceB()" class="w-full border border-slate-300 rounded-xl px-3 py-2.5 bg-white text-slate-800 font-bold cursor-pointer focus:ring-2 focus:ring-sky-500 focus:outline-none shadow-sm">
                     <option value="1">1명 (하루 ₩99,000~)</option>
-                    <option value="2">2명 (하루 ₩198,00~)</option>
+                    <option value="2">2명 (하루 ₩198,000~)</option>
                     <option value="3">3명 (하루 ₩297,000~)</option>
                     <option value="4">4명 (하루 ₩396,000~)</option>
                     <option value="5">5명 (하루 ₩495,000~)</option>
