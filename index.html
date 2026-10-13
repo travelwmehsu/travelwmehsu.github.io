@@ -75,42 +75,39 @@
                     <img onclick="document.getElementById('mainImage').src=this.src" class="flex-none w-24 h-20 object-cover rounded-xl cursor-pointer hover:opacity-80 border-2 border-transparent hover:border-sky-500 transition shadow-sm snap-start" src="IMG_0799.webp" alt="성산일출봉 산책로">
                 </div>
             </div>
-            <!-- RIGHT PRICING BOX (VARIANT B: DAILY PRICE + CLEAR TOTAL PRICE) -->
+            <!-- RIGHT PRICING BOX (VARIANT A: TOTAL PRICE) -->
 <div class="lg:col-span-1">
     <div class="bg-white/95 backdrop-blur-md rounded-2xl shadow-xl border border-slate-200/80 p-6 sticky top-[80px]">
-              <!-- PRICE DISPLAY B (Hiển thị giá theo ngày + Kèm tổng giá theo góp ý của giáo sư) -->
+        
+        <!-- PRICE DISPLAY A -->
         <div class="mb-6 p-4 rounded-xl bg-sky-50/80 border border-sky-100">
-            <div class="text-xs text-sky-800 font-bold uppercase mb-1"><i class="fa-solid fa-piggy-bank mr-1"></i>부담 없는 1일 분할 가격</div>
+            <div class="text-xs text-sky-800 font-bold uppercase mb-1">3박 4일 전 일정 총액</div>
             <div class="flex items-baseline space-x-1">
-                <span class="text-xs font-semibold text-slate-500">하루</span>
-                <span id="priceDisplay" class="text-3xl font-extrabold text-sky-600">₩99,750~</span>
+                <span id="priceDisplay" class="text-3xl font-extrabold text-sky-600">₩399,000</span>
+                <span id="peopleLabel" class="text-xs text-slate-500">/ 1인 기준</span>
             </div>
-            <!-- Bổ sung tổng giá rõ ràng để người dùng nắm chính xác -->
-            <div id="totalPriceNotice" class="text-xs text-slate-600 font-semibold mt-1.5 pt-1.5 border-t border-sky-200/60">
-                <i class="fa-solid fa-circle-info mr-1 text-sky-600"></i>(3박 4일 총액: <span class="text-slate-900 font-bold">₩399,000</span>)
-            </div>
+            <div class="text-[11px] text-slate-500 mt-1"><i class="fa-solid fa-circle-info mr-1"></i>항공, 4성급 호텔, 주요 입장권 포함</div>
         </div>
+
         <div class="space-y-4 mb-6 text-sm">
-            <!-- CALENDAR DATE PICKER -->
             <div>
                 <label class="block font-medium text-slate-700 mb-1.5"><i class="fa-regular fa-calendar-days text-sky-600 mr-1.5"></i>출발일 선택 (최소 3일 후)</label>
                 <input type="date" id="startDate" class="w-full border border-slate-300 rounded-xl px-3 py-2.5 bg-white text-slate-700 font-medium cursor-pointer focus:ring-2 focus:ring-sky-500 focus:outline-none shadow-sm">
             </div>
-            <!-- DYNAMIC PEOPLE SELECTOR (Hiển thị rõ cả ngày và tổng trong tuỳ chọn) -->
             <div>
                 <label class="block font-medium text-slate-700 mb-1.5"><i class="fa-solid fa-users text-sky-600 mr-1.5"></i>인원 선택</label>
-                <select id="peopleSelect" onchange="updatePriceB()" class="w-full border border-slate-300 rounded-xl px-3 py-2.5 bg-white text-slate-800 font-bold cursor-pointer focus:ring-2 focus:ring-sky-500 focus:outline-none shadow-sm">
-                    <option value="1">1명 (하루 ₩99,750~ / 총 ₩399,000)</option>
-                    <option value="2">2명 (하루 ₩199,500~ / 총 ₩798,000)</option>
-                    <option value="3">3명 (하루 ₩299,250~ / 총 ₩1,197,000)</option>
-                    <option value="4">4명 (하루 ₩399,000~ / 총 ₩1,596,000)</option>
-                    <option value="5">5명 (하루 ₩498,750~ / 총 ₩1,995,000)</option>
-                    <option value="6">6명 (하루 ₩598,500~ / 총 ₩2,394,000)</option>
+                <select id="peopleSelect" onchange="updatePriceA()" class="w-full border border-slate-300 rounded-xl px-3 py-2.5 bg-white text-slate-800 font-bold cursor-pointer focus:ring-2 focus:ring-sky-500 focus:outline-none shadow-sm">
+                    <option value="1">1명 (₩399,000)</option>
+                    <option value="2">2명 (₩798,000)</option>
+                    <option value="3">3명 (₩1,197,000)</option>
+                    <option value="4">4명 (₩1,596,000)</option>
+                    <option value="5">5명 (₩1,995,000)</option>
+                    <option value="6">6명 (₩2,394,000)</option>
                 </select>
             </div>
         </div>
-        <!-- URGENT CTA BUTTON -->
-        <button onclick="handleBooking('B')" class="w-full gradient-bg hover:opacity-95 text-white font-bold py-3.5 rounded-xl shadow-lg shadow-sky-500/25 transition flex items-center justify-center space-x-2">
+
+        <button onclick="handleBooking('A')" class="w-full gradient-bg hover:opacity-95 text-white font-bold py-3.5 rounded-xl shadow-lg shadow-sky-500/25 transition flex items-center justify-center space-x-2">
             <span>🔥 마감 임박! 지금 바로 예약하기</span>
         </button>
     </div>
