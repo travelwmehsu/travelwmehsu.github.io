@@ -77,17 +77,17 @@
             </div>
             <!-- RIGHT PRICING BOX (VARIANT B: DAILY PRICE + CLEAR TOTAL PRICE) -->
 <div class="lg:col-span-1">
-    <div class="bg-white/95 backdrop-blur-md rounded-2xl shadow-xl border border-slate-200/80 p-6 sticky top-[80px]">       
-        <!-- PRICE DISPLAY B (Hiển thị giá theo ngày + Kèm tổng giá theo góp ý của giáo sư) -->
+    <div class="bg-white/95 backdrop-blur-md rounded-2xl shadow-xl border border-slate-200/80 p-6 sticky top-[80px]">
+              <!-- PRICE DISPLAY B (Hiển thị giá theo ngày + Kèm tổng giá theo góp ý của giáo sư) -->
         <div class="mb-6 p-4 rounded-xl bg-sky-50/80 border border-sky-100">
             <div class="text-xs text-sky-800 font-bold uppercase mb-1"><i class="fa-solid fa-piggy-bank mr-1"></i>부담 없는 1일 분할 가격</div>
             <div class="flex items-baseline space-x-1">
                 <span class="text-xs font-semibold text-slate-500">하루</span>
-                <span id="priceDisplay" class="text-3xl font-extrabold text-sky-600">₩99,000~</span>
+                <span id="priceDisplay" class="text-3xl font-extrabold text-sky-600">₩99,750~</span>
             </div>
             <!-- Bổ sung tổng giá rõ ràng để người dùng nắm chính xác -->
             <div id="totalPriceNotice" class="text-xs text-slate-600 font-semibold mt-1.5 pt-1.5 border-t border-sky-200/60">
-                <i class="fa-solid fa-circle-info mr-1 text-sky-600"></i>(3박 4일 총액: <span class="text-slate-900 font-bold">₩396,000</span>)
+                <i class="fa-solid fa-circle-info mr-1 text-sky-600"></i>(3박 4일 총액: <span class="text-slate-900 font-bold">₩399,000</span>)
             </div>
         </div>
         <div class="space-y-4 mb-6 text-sm">
@@ -100,12 +100,12 @@
             <div>
                 <label class="block font-medium text-slate-700 mb-1.5"><i class="fa-solid fa-users text-sky-600 mr-1.5"></i>인원 선택</label>
                 <select id="peopleSelect" onchange="updatePriceB()" class="w-full border border-slate-300 rounded-xl px-3 py-2.5 bg-white text-slate-800 font-bold cursor-pointer focus:ring-2 focus:ring-sky-500 focus:outline-none shadow-sm">
-                    <option value="1">1명 (하루 ₩99,000~ / 총 ₩396,000)</option>
-                    <option value="2">2명 (하루 ₩198,000~ / 총 ₩792,000)</option>
-                    <option value="3">3명 (하루 ₩297,000~ / 총 ₩1,188,000)</option>
-                    <option value="4">4명 (하루 ₩396,000~ / 총 ₩1,584,000)</option>
-                    <option value="5">5명 (하루 ₩495,000~ / 총 ₩1,980,000)</option>
-                    <option value="6">6명 (하루 ₩594,000~ / 총 ₩2,376,000)</option>
+                    <option value="1">1명 (하루 ₩99,750~ / 총 ₩399,000)</option>
+                    <option value="2">2명 (하루 ₩199,500~ / 총 ₩798,000)</option>
+                    <option value="3">3명 (하루 ₩299,250~ / 총 ₩1,197,000)</option>
+                    <option value="4">4명 (하루 ₩399,000~ / 총 ₩1,596,000)</option>
+                    <option value="5">5명 (하루 ₩498,750~ / 총 ₩1,995,000)</option>
+                    <option value="6">6명 (하루 ₩598,500~ / 총 ₩2,394,000)</option>
                 </select>
             </div>
         </div>
