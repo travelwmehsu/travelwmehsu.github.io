@@ -59,14 +59,14 @@
             <!-- LEFT GALLERY (SCROLLABLE THUMBNAILS WITH 7 IMAGES) -->
             <div class="lg:col-span-2 space-y-4">
                 <div class="relative h-[340px] sm:h-[420px] rounded-2xl overflow-hidden shadow-xl bg-slate-100 border border-slate-200">
-                    <img id="mainImage" src="IMG_0803.png" alt="제주도 풍경" class="w-full h-full object-cover transition-all duration-300">
+                    <img id="mainImage" src="IMG_0800.png" alt="제주도 풍경" class="w-full h-full object-cover transition-all duration-300">
                     <div class="absolute top-4 left-4 bg-slate-900/80 text-white text-xs font-semibold px-3 py-1.5 rounded-full flex items-center gap-1.5 backdrop-blur-sm">
                         <i class="fa-solid fa-fire text-amber-400"></i> 요즘 가장 핫한 제주 패키지
                     </div>
                 </div>                
                 <!-- Horizontal Scrollable Thumbnails -->
                 <div class="flex space-x-3 overflow-x-auto pb-2 snap-x snap-mandatory hide-scrollbar">
-                    <img onclick="document.getElementById('mainImage').src=this.src" class="flex-none w-24 h-20 object-cover rounded-xl cursor-pointer hover:opacity-80 border-2 border-sky-500 transition shadow-sm snap-start" src="IMG_0803.png" alt="제주 전경">
+                    <img onclick="document.getElementById('mainImage').src=this.src" class="flex-none w-24 h-20 object-cover rounded-xl cursor-pointer hover:opacity-80 border-2 border-sky-500 transition shadow-sm snap-start" src="IMG_0800.png" alt="제주 전경">
                     <img onclick="document.getElementById('mainImage').src=this.src" class="flex-none w-24 h-20 object-cover rounded-xl cursor-pointer hover:opacity-80 border-2 border-transparent hover:border-sky-500 transition shadow-sm snap-start" src="IMG_0802.jpeg" alt="산방산 유채꽃">
                     <img onclick="document.getElementById('mainImage').src=this.src" class="flex-none w-24 h-20 object-cover rounded-xl cursor-pointer hover:opacity-80 border-2 border-transparent hover:border-sky-500 transition shadow-sm snap-start" src="IMG_0801.jpeg" alt="성산일출봉 해안">
                     <img onclick="document.getElementById('mainImage').src=this.src" class="flex-none w-24 h-20 object-cover rounded-xl cursor-pointer hover:opacity-80 border-2 border-transparent hover:border-sky-500 transition shadow-sm snap-start" src="IMG_0796.webp" alt="돌하르방 해변">
