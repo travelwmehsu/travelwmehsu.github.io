@@ -236,6 +236,21 @@ window._wingify_code || (function() {
         </div>
     </section>
 </main>
+<!-- 📌 여기에 모달 HTML 코드 삽입 -->
+<div id="customModal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm">
+    <div class="bg-white rounded-2xl p-6 max-w-sm w-full mx-4 shadow-2xl transform transition-all">
+        <div class="text-center">
+            <div class="w-12 h-12 bg-sky-100 text-sky-600 rounded-full flex items-center justify-center mx-auto mb-3 text-xl">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-1">예약 요청 완료!</h3>
+            <p id="modalText" class="text-sm text-slate-600 mb-5">선택하신 일정과 인원으로 예약이 접수되었습니다.</p>
+            <button onclick="closeModal()" class="w-full bg-sky-600 text-white font-bold py-2.5 rounded-xl hover:bg-sky-700 transition">
+                확인
+            </button>
+        </div>
+    </div>
+</div>
 <script>
     const DAILY_PRICE = 99750;
     const BASE_TOTAL_PRICE = 399000;
