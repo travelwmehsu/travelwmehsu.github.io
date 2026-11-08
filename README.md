@@ -132,10 +132,11 @@ window._wingify_code || (function() {
         </div>
         <div class="space-y-4 mb-6 text-sm">
             <!-- CALENDAR DATE PICKER -->
-            <div>
+           <div>
                 <label class="block font-medium text-slate-700 mb-1.5"><i class="fa-regular fa-calendar-days text-sky-600 mr-1.5"></i>출발일 선택 (최소 3일 후)</label>
-                <input type="date" id="startDateB" class="w-full border border-slate-300 rounded-xl px-3 py-2.5 bg-white text-slate-700 font-medium cursor-pointer focus:ring-2 focus:ring-sky-500 focus:outline-none shadow-sm">
+                <input type="date" id="startDate" class="w-full border border-slate-300 rounded-xl px-3 py-2.5 bg-white text-slate-700 font-medium cursor-pointer focus:ring-2 focus:ring-sky-500 focus:outline-none shadow-sm">
             </div>
+
             <!-- DYNAMIC PEOPLE SELECTOR -->
             <div>
                 <label class="block font-medium text-slate-700 mb-1.5"><i class="fa-solid fa-users text-sky-600 mr-1.5"></i>인원 선택</label>
