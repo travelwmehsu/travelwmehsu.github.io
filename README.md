@@ -254,38 +254,48 @@ window._wingify_code || (function() {
 <script>
     const DAILY_PRICE = 99750;
     const BASE_TOTAL_PRICE = 399000;
-    // Tự động thiết lập ngày mặc định (cách hôm nay 3 ngày) và chặn chọn ngày quá khứ
+    // Thiết lập ngày khởi hành tự động (tối thiểu 3 ngày sau) và khởi tạo giá ngay khi trang tải
     document.addEventListener("DOMContentLoaded", function() {
         const dateInput = document.getElementById('startDate');
         if (dateInput) {
             const targetDate = new Date();
             targetDate.setDate(targetDate.getDate() + 3);
-            const minStr = targetDate.toISOString().split('T')[0];  
-            // Khóa các ngày trước 3 ngày sau (loại bỏ quá khứ và cận kề)
+            const minStr = targetDate.toISOString().split('T')[0];
+            // Khóa ngày trong quá khứ và các ngày cận kề (tối thiểu 3 ngày sau)
             dateInput.min = minStr;
-            // Hiển thị sẵn ngày mặc định lên ô input ngay khi vừa truy cập web
             dateInput.value = minStr;
         }
+        // Gọi hàm cập nhật giá để hiển thị ngay lập tức khi load trang giống biến thể A
+        if (typeof updatePriceB === 'function') {
+            updatePriceB();
+        }
     });
-    // Cập nhật giá theo số lượng người chọn ở Biến thể B
+    // Hàm tính toán và cập nhật giá theo số lượng người
     function updatePriceB() {
-        const count = parseInt(document.getElementById('peopleSelectB').value);
+        const peopleSelect = document.getElementById('peopleSelectB');
+        if (!peopleSelect) return;
+        const count = parseInt(peopleSelect.value);
         const dailyTotal = DAILY_PRICE * count;
         const fullTotal = BASE_TOTAL_PRICE * count;
-        document.getElementById('priceDisplayB').innerText = '₩' + dailyTotal.toLocaleString() + '~';
-        document.getElementById('totalPriceNotice').innerHTML = `(3박 4일 총액: <span class="text-slate-900 font-bold">₩${fullTotal.toLocaleString()}</span>)`;
+        const priceDisplay = document.getElementById('priceDisplayB');
+        const totalPriceNotice = document.getElementById('totalPriceNotice');
+        if (priceDisplay) {
+            priceDisplay.innerText = '₩' + dailyTotal.toLocaleString() + '~';
+        }
+        if (totalPriceNotice) {
+            totalPriceNotice.innerHTML = `(3박 4일 총액: <span class="text-slate-900 font-bold">₩${fullTotal.toLocaleString()}</span>)`;
+        }
     }
-    // Xử lý sự kiện khi ấn nút đặt chỗ và hiển thị Custom Modal giữa màn hình
+    // Xử lý sự kiện đặt chỗ và hiển thị modal giữa màn hình
     function handleBooking(variant) {
-        const selectEl = document.getElementById('peopleSelectB') || document.getElementById('peopleSelect');
+        const selectEl = document.getElementById('peopleSelectB');
         const count = selectEl ? selectEl.value : 1;
-        const selectedDate = document.getElementById('startDate').value;  
-        // Đưa thông tin ngày và số người vào nội dung modal
+        const dateEl = document.getElementById('startDate');
+        const selectedDate = dateEl ? dateEl.value : ''; 
         const modalText = document.getElementById('modalText');
         if (modalText) {
             modalText.innerText = `출발일: ${selectedDate} / 예약 인원: ${count}명\n성공적으로 예약 요청이 접수되었습니다! ✈️🌸`;
         }
-        // Hiển thị modal giữa màn hình
         const modal = document.getElementById('customModal');
         if (modal) {
             modal.classList.remove('hidden');
@@ -293,7 +303,7 @@ window._wingify_code || (function() {
         let currentClicks = localStorage.getItem('clicks_variant_' + variant) || 0;
         localStorage.setItem('clicks_variant_' + variant, parseInt(currentClicks) + 1);
     }
-    // Hàm đóng Modal
+    // Đóng Modal
     function closeModal() {
         const modal = document.getElementById('customModal');
         if (modal) {
