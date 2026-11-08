@@ -272,11 +272,29 @@ window._wingify_code || (function() {
         document.getElementById('totalPriceNotice').innerHTML = `(3박 4일 총액: <span class="text-slate-900 font-bold">₩${fullTotal.toLocaleString()}</span>)`;
     }
     function handleBooking(variant) {
-        const count = document.getElementById('peopleSelectB').value; // Đã khớp với id="peopleSelectB" trong HTML
+        // Lấy số lượng người (hỗ trợ cả ID của bản A hoặc bản B)
+        const selectEl = document.getElementById('peopleSelectB') || document.getElementById('peopleSelect');
+        const count = selectEl ? selectEl.value : 1;
         const selectedDate = document.getElementById('startDate').value;
-        alert(`🎉 예약 요청이 성공적으로 완료되었습니다!\n\n- 출발 예정일: ${selectedDate}\n- 예약 인원: ${count}명\n\n즐겁고 행복한 제주 여행이 되시길 바랍니다. ✈️🌸`);
+        // Đưa thông tin ngày và số người vào nội dung modal
+        const modalText = document.getElementById('modalText');
+        if (modalText) {
+            modalText.innerText = `출발일: ${selectedDate} / 예약 인원: ${count}명\n성공적으로 예약 요청이 접수되었습니다! ✈️🌸`;
+        }
+        // Hiển thị modal giữa màn hình bằng cách xóa class 'hidden'
+        const modal = document.getElementById('customModal');
+        if (modal) {
+            modal.classList.remove('hidden');
+        }
         let currentClicks = localStorage.getItem('clicks_variant_' + variant) || 0;
         localStorage.setItem('clicks_variant_' + variant, parseInt(currentClicks) + 1);
+    }
+    function closeModal() {
+        // Đóng modal bằng cách thêm lại class 'hidden'
+        const modal = document.getElementById('customModal');
+        if (modal) {
+            modal.classList.add('hidden');
+        }
     }
 </script>
 </body>
