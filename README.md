@@ -125,7 +125,7 @@ window._wingify_code || (function() {
             <div class="text-xs text-sky-800 font-bold uppercase mb-1"><i class="fa-solid fa-piggy-bank mr-1"></i>부담 없는 1일 분할 가격</div>
             <div class="flex items-baseline space-x-1">
               <span id="priceDisplayA" class="text-3xl font-extrabold text-sky-600 vwo_1794103837748">₩99,750~</span>
-               <span class="text-xs text-slate-500">/ ~ 하루 </span>
+               <span class="text-xs text-slate-500">/ 하루 </span>
             </div>
             <div class="text-xs text-slate-600 font-semibold mt-1.5 pt-1.5 border-t border-sky-200/60">
                 (3박 4일 총액: <span class="text-slate-900 font-bold">₩399,000</span>)
