@@ -59,7 +59,7 @@ window._wingify_code || (function() {
 <span>홈</span> <span>/</span> <span>국내 여행</span> <span>/</span> <span class="text-slate-800 font-medium">제주특별자치도</span>
 </div>
 <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-\🌴 제주도 오션뷰 호텔 & 핫플 감성 투어 (3박 4일)
+🌴 제주도 오션뷰 호텔 & 핫플 감성 투어 (3박 4일)
 </h1>
 <div class="flex flex-wrap items-center gap-4 mt-2 text-sm text-slate-600">
 <div class="flex items-center text-amber-500 font-bold">
