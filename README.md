@@ -15,7 +15,6 @@
         .hide-scrollbar::-webkit-scrollbar { display: none; }
         .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     </style>
-
 <!-- Start Wingify Async V3.0 SmartCode -->
 <link rel="preconnect" href="https://edge.wingify.net"/>
 <script type="text/javascript">
@@ -29,8 +28,7 @@ window._wingify_code || (function() {
     /* DO NOT EDIT BELOW THIS LINE */
     var n=window,i=document;if(-1<i.URL.indexOf('__wingify_disable__')||n._wingify_code)return;var t=!1,r=i.currentScript,nonce=r&&r.nonce,e={sT:settings_tolerance,hES:hide_element_style,hE:hide_element};try{e=Object.assign(e,JSON.parse(localStorage.getItem('_wingify_'+account_id+'_config')))}catch(e){}var code={script:r,nonce:nonce,settings_tolerance:function(){return e.sT},hide_element:function(){return performance.getEntriesByName('first-contentful-paint')[0]?'':e.hE},hide_element_style:function(){return'{'+e.hES+'}'},getVersion:function(){return version},finish:function(){var e;!t&&(t=!0,e=i.getElementById('_vis_opt_path_hides'))&&e.parentNode.removeChild(e)},finished:function(){return t},addScript:function(e){var t=i.createElement('script');t.src=e,nonce&&t.setAttribute('nonce',nonce),t.fetchPriority='high',i.head.appendChild(t)},init:function(){n._settings_timer=setTimeout(function(){code.finish()},this.settings_tolerance());var e,t=this.hide_element();t&&((e=i.createElement('style')).id='_vis_opt_path_hides',nonce&&e.setAttribute('nonce',nonce),e.textContent=t+this.hide_element_style(),i.head.appendChild(e)),this.addScript('https://edge.wingify.net/tag/'+account_id+'.js')}};n._wingify_code=code;code.init();})();
 </script> 
-<!--End Wingify Async SmartCode -->
-    
+<!--End Wingify Async SmartCode --> 
 </head>
 <body class="bg-gradient-to-br from-sky-50 via-slate-50 to-blue-50 text-slate-800 antialiased pb-20 min-h-screen">
     <!-- HEADER NAVIGATION -->
@@ -90,7 +88,7 @@ window._wingify_code || (function() {
                     <img onclick="document.getElementById('mainImage').src=this.src" class="flex-none w-24 h-20 object-cover rounded-xl cursor-pointer hover:opacity-80 border-2 border-transparent hover:border-sky-500 transition shadow-sm snap-start" src="IMG_0798.webp" alt="제주 해안 파도">
                     <img onclick="document.getElementById('mainImage').src=this.src" class="flex-none w-24 h-20 object-cover rounded-xl cursor-pointer hover:opacity-80 border-2 border-transparent hover:border-sky-500 transition shadow-sm snap-start" src="IMG_0799.webp" alt="성산일출봉 산책로">
                 </div>
-            </div>      
+            </div>       
         <!-- DETAILS & REVIEWS -->
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div class="lg:col-span-2 space-y-8">               
@@ -118,30 +116,28 @@ window._wingify_code || (function() {
                         <p><strong>4일차:</strong> 사려니 숲길 힐링 산책 - 동문시장 오메기떡 & 감귤 기념품 쇼핑 - 제주공항 출발</p>
                     </div>
                 </section>
-<!-- KHUNG GIÁ BIẾN THỂ B: TỔNG GIÁ THEO NGAY -->
-<div class="bg-white/95 backdrop-blur-md rounded-2xl shadow-xl border border-slate-200/80 p-6 sticky top-[80px] vwo_1794104171275">
-        <!-- PRICE DISPLAY A -->
+<!-- KHUNG GIÁ BIẾN THỂ B: TỔNG GIÁ CHỦ ĐẠO + GIỮ CỐ ĐỊNH TIỆN ÍCH[span_16](start_span)[span_16](end_span) -->
+<div class="lg:col-span-1">
+    <div class="bg-white/95 backdrop-blur-md rounded-2xl shadow-xl border border-slate-200/80 p-6 sticky top-[80px]"> 
+        <!-- PRICE DISPLAY B -->
         <div class="mb-6 p-4 rounded-xl bg-sky-50/80 border border-sky-100">
-            <div class="text-xs text-sky-800 font-bold uppercase mb-1"><i class="fa-solid fa-piggy-bank mr-1"></i>부담 없는 1일 분할 가격</div>
+            <div class="text-xs text-sky-800 font-bold uppercase mb-1">3박 4일 전 일정 총액</div>
             <div class="flex items-baseline space-x-1">
-              <span id="priceDisplayA" class="text-3xl font-extrabold text-sky-600 vwo_1794103837748">₩99,750~</span>
-               <span class="text-xs text-slate-500">/ 하루 </span>
-            </div>
-            <div class="text-xs text-slate-600 font-semibold mt-1.5 pt-1.5 border-t border-sky-200/60">
-                (3박 4일 총액: <span class="text-slate-900 font-bold">₩399,000</span>)
+                <span id="priceDisplayB" class="text-3xl font-extrabold text-sky-600">₩399,000</span>
+                <span class="text-xs text-slate-500">/ 1인 기준</span>
             </div>
             <div class="text-[11px] text-slate-500 mt-1.5"><i class="fa-solid fa-circle-info mr-1"></i>(항공, 4성급 호텔, 주요 입장권 포함)</div>
         </div>
         <div class="space-y-4 mb-6 text-sm">
-           <!-- CALENDAR DATE PICKER -->
+                       <!-- CALENDAR DATE PICKER -->
            <div>
                 <label class="block font-medium text-slate-700 mb-1.5"><i class="fa-regular fa-calendar-days text-sky-600 mr-1.5"></i>출발일 선택 (최소 3일 후)</label>
                 <input type="date" id="startDate" class="w-full border border-slate-300 rounded-xl px-3 py-2.5 bg-white text-slate-700 font-medium cursor-pointer focus:ring-2 focus:ring-sky-500 focus:outline-none shadow-sm">
             </div>
-            <!-- DYNAMIC PEOPLE SELECTOR (Gọn gàng)[span_12](start_span)[span_12](end_span) -->
+            <!-- DYNAMIC PEOPLE SELECTOR -->
             <div>
                 <label class="block font-medium text-slate-700 mb-1.5"><i class="fa-solid fa-users text-sky-600 mr-1.5"></i>인원 선택</label>
-                <select id="peopleSelectA" onchange="updatePriceA()" class="w-full border border-slate-300 rounded-xl px-3 py-2.5 bg-white text-slate-800 font-bold cursor-pointer focus:ring-2 focus:ring-sky-500 focus:outline-none shadow-sm">
+                <select id="peopleSelectB" onchange="updatePriceB()" class="w-full border border-slate-300 rounded-xl px-3 py-2.5 bg-white text-slate-800 font-bold cursor-pointer focus:ring-2 focus:ring-sky-500 focus:outline-none shadow-sm">
                     <option value="1">1명 (₩399,000)</option>
                     <option value="2">2명 (₩798,000)</option>
                     <option value="3">3명 (₩1,197,000)</option>
@@ -152,10 +148,11 @@ window._wingify_code || (function() {
             </div>
         </div>
         <!-- URGENT CTA BUTTON -->
-        <button onclick="handleBooking('A')" class="w-full gradient-bg hover:opacity-95 text-white font-bold py-3.5 rounded-xl shadow-lg shadow-sky-500/25 transition flex items-center justify-center space-x-2">
+        <button onclick="handleBooking('B')" class="w-full gradient-bg hover:opacity-95 text-white font-bold py-3.5 rounded-xl shadow-lg shadow-sky-500/25 transition flex items-center justify-center space-x-2">
             <span>🔥 마감 임박! 지금 바로 예약하기</span>
         </button>
     </div>
+</div>
                 <!-- SWIPEABLE REVIEWS CAROUSEL -->
                 <section id="reviews" class="bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-sm border border-slate-200">
                     <div class="flex items-center justify-between mb-4">
