@@ -246,30 +246,30 @@ window._wingify_code || (function() {
 
 
 <script>
-\const BASE_PRICE = 399000;
-\document.addEventListener("DOMContentLoaded", function() {
-\const dateInput = document.getElementById('startDate');
-\if (dateInput) {
-\const targetDate = new Date();
-\targetDate.setDate(targetDate.getDate() + 3);
-\const minStr = targetDate.toISOString().split('T')[0];
-\dateInput.min = minStr;
-\dateInput.value = minStr;
-}
-});
-\function updatePriceA() {
-\const count = parseInt(document.getElementById('peopleSelect').value);
-\const total = BASE_PRICE * count;
-\document.getElementById('priceDisplay').innerText = '₩' + total.toLocaleString();
-\document.getElementById('peopleLabel').innerText = `/ 총 ${count}인 기준`;
-}
-\function handleBooking(variant) {
-\const count = document.getElementById('peopleSelect').value;
-\const selectedDate = document.getElementById('startDate').value;
-\alert(`🎉 예약 요청이 성공적으로 완료되었습니다!\n\n- 출발 예정일: ${selectedDate}\n- 예약 인원: ${count}명\n\n즐겁고 행복한 제주 여행이 되시길 바랍니다. ✈️🌸`);
-\let currentClicks = localStorage.getItem('clicks_variant_' + variant) || 0;
-\localStorage.setItem('clicks_variant_' + variant, parseInt(currentClicks) + 1);
-}
+    const BASE_PRICE = 399000;
+    document.addEventListener("DOMContentLoaded", function() {
+        const dateInput = document.getElementById('startDate');
+        if (dateInput) {
+            const targetDate = new Date();
+            targetDate.setDate(targetDate.getDate() + 3);
+            const minStr = targetDate.toISOString().split('T')[0];
+            dateInput.min = minStr;
+            dateInput.value = minStr;
+        }
+    });
+    function updatePriceA() {
+        const count = parseInt(document.getElementById('peopleSelect').value);
+        const total = BASE_PRICE * count;
+        document.getElementById('priceDisplay').innerText = '₩' + total.toLocaleString();
+        document.getElementById('peopleLabel').innerText = `/ 총 ${count}인 기준`;
+    }
+    function handleBooking(variant) {
+        const count = document.getElementById('peopleSelect').value;
+        const selectedDate = document.getElementById('startDate').value;
+        alert(`🎉 예약 요청이 성공적으로 완료되었습니다!\n\n- 출발 예정일: ${selectedDate}\n- 예약 인원: ${count}명\n\n즐겁고 행복한 제주 여행이 되시길 바랍니다. ✈️🌸`);
+        let currentClicks = localStorage.getItem('clicks_variant_' + variant) || 0;
+        localStorage.setItem('clicks_variant_' + variant, parseInt(currentClicks) + 1);
+    }
 </script>
 </body>
 </html>
