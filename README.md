@@ -280,7 +280,6 @@ window._wingify_code || (function() {
         const modalText = document.getElementById('modalText');
         if (modalText) {
             modalText.innerText = `출발일: ${selectedDate} / 예약 인원: ${count}명\n즐겁고 행복한 제주 여행이 되시길 바랍니다! ✈️🌸`;
-        
         // Hiển thị modal giữa màn hình bằng cách xóa class 'hidden'
         const modal = document.getElementById('customModal');
         if (modal) {
