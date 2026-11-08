@@ -237,7 +237,8 @@ window._wingify_code || (function() {
     </section>
 </main>
 <script>
-    const BASE_PRICE = 399000;
+    const DAILY_PRICE = 99750;
+    const BASE_TOTAL_PRICE = 399000;
     document.addEventListener("DOMContentLoaded", function() {
         const dateInput = document.getElementById('startDate');
         if (dateInput) {
@@ -248,14 +249,15 @@ window._wingify_code || (function() {
             dateInput.value = minStr;
         }
     });
-    function updatePriceA() {
-        const count = parseInt(document.getElementById('peopleSelect').value);
-        const total = BASE_PRICE * count;
-        document.getElementById('priceDisplay').innerText = '₩' + total.toLocaleString();
-        document.getElementById('peopleLabel').innerText = `/ 총 ${count}인 기준`;
+    function updatePriceB() {
+        const count = parseInt(document.getElementById('peopleSelectB').value);
+        const dailyTotal = DAILY_PRICE * count;
+        const fullTotal = BASE_TOTAL_PRICE * count;
+        document.getElementById('priceDisplayB').innerText = '₩' + dailyTotal.toLocaleString() + '~';
+        document.getElementById('totalPriceNotice').innerHTML = `(3박 4일 총액: <span class="text-slate-900 font-bold">₩${fullTotal.toLocaleString()}</span>)`;
     }
     function handleBooking(variant) {
-        const count = document.getElementById('peopleSelect').value;
+        const count = document.getElementById('peopleSelectB').value; // Đã khớp với id="peopleSelectB" trong HTML
         const selectedDate = document.getElementById('startDate').value;
         alert(`🎉 예약 요청이 성공적으로 완료되었습니다!\n\n- 출발 예정일: ${selectedDate}\n- 예약 인원: ${count}명\n\n즐겁고 행복한 제주 여행이 되시길 바랍니다. ✈️🌸`);
         let currentClicks = localStorage.getItem('clicks_variant_' + variant) || 0;
