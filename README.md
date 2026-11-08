@@ -118,11 +118,9 @@ window._wingify_code || (function() {
                         <p><strong>4일차:</strong> 사려니 숲길 힐링 산책 - 동문시장 오메기떡 & 감귤 기념품 쇼핑 - 제주공항 출발</p>
                     </div>
                 </section>
-
 <!-- KHUNG GIÁ BIẾN THỂ B: TỔNG GIÁ CHỦ ĐẠO + GIỮ CỐ ĐỊNH TIỆN ÍCH[span_16](start_span)[span_16](end_span) -->
 <div class="lg:col-span-1">
-    <div class="bg-white/95 backdrop-blur-md rounded-2xl shadow-xl border border-slate-200/80 p-6 sticky top-[80px]">
-        
+    <div class="bg-white/95 backdrop-blur-md rounded-2xl shadow-xl border border-slate-200/80 p-6 sticky top-[80px]"> 
         <!-- PRICE DISPLAY B -->
         <div class="mb-6 p-4 rounded-xl bg-sky-50/80 border border-sky-100">
             <div class="text-xs text-sky-800 font-bold uppercase mb-1">3박 4일 전 일정 총액[span_17](start_span)[span_17](end_span)</div>
@@ -132,7 +130,6 @@ window._wingify_code || (function() {
             </div>
             <div class="text-[11px] text-slate-500 mt-1.5"><i class="fa-solid fa-circle-info mr-1"></i>(항공, 4성급 호텔, 주요 입장권 포함)[span_20](start_span)[span_20](end_span)</div>
         </div>
-
         <div class="space-y-4 mb-6 text-sm">
             <!-- CALENDAR DATE PICKER -->
             <div>
@@ -152,7 +149,6 @@ window._wingify_code || (function() {
                 </select>
             </div>
         </div>
-
         <!-- URGENT CTA BUTTON -->
         <button onclick="handleBooking('B')" class="w-full gradient-bg hover:opacity-95 text-white font-bold py-3.5 rounded-xl shadow-lg shadow-sky-500/25 transition flex items-center justify-center space-x-2">
             <span>🔥 마감 임박! 지금 바로 예약하기</span>
