@@ -69,12 +69,10 @@ window._wingify_code || (function() {
             <div class="flex items-center"><i class="fa-solid fa-clock text-sky-500 mr-1.5"></i> 3박 4일</div>
         </div>
     </div>
-
     <!-- STABLE RESPONSIVE GRID LAYOUT -->
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
         <!-- LEFT MAIN CONTENT (Gallery, Highlights, Itinerary, Guide) -->
-        <div class="lg:col-span-2 space-y-8">
-            
+        <div class="lg:col-span-2 space-y-8">          
             <!-- GALLERY WITH LIGHTBOX BUTTON -->
             <div class="space-y-4">
                 <div class="relative h-[340px] sm:h-[420px] rounded-2xl overflow-hidden shadow-xl bg-slate-100 border border-slate-200">
@@ -97,7 +95,6 @@ window._wingify_code || (function() {
                     <img onclick="document.getElementById('mainImage').src=this.src" class="flex-none w-24 h-20 object-cover rounded-xl cursor-pointer hover:opacity-80 border-2 border-transparent hover:border-sky-500 transition shadow-sm snap-start" src="IMG_0798.webp" alt="제주 해안 파도">
                 </div>
             </div>
-
             <!-- HIGHLIGHTS (COLLAPSIBLE: 3 default, expandable to 6) -->
             <section id="highlights" class="bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-sm border border-slate-200">
                 <h2 class="text-xl font-bold text-slate-900 mb-4 flex items-center">
@@ -116,7 +113,6 @@ window._wingify_code || (function() {
                     <span>포인트 더보기 (3개 더)</span> <i class="fa-solid fa-chevron-down text-xs"></i>
                 </button>
             </section>
-
             <!-- ITINERARY (COLLAPSIBLE: 2 days default, expandable to 4 days) -->
             <section id="itinerary" class="bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-sm border border-slate-200">
                 <h2 class="text-xl font-bold text-slate-900 mb-6 flex items-center">
@@ -134,23 +130,19 @@ window._wingify_code || (function() {
                     <span>전체 일정 3박 4일 모두 보기</span> <i class="fa-solid fa-chevron-down text-xs"></i>
                 </button>
             </section>
-
             <!-- DETAILED GUIDE SECTIONS (Expanded Jeju travel guide inspired by reference) -->
             <section class="bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-sm border border-slate-200 space-y-6 text-sm text-slate-700">
                 <h2 class="text-xl font-bold text-slate-900 flex items-center">
                     <i class="fa-solid fa-book-open text-sky-600 mr-2.5"></i> 제주 여행 완벽 가이드 & 꿀팁
-                </h2>
-                
+                </h2>              
                 <div class="space-y-4">
                     <h3 class="font-bold text-slate-900 text-base">1. 제주도 3박 4일 최적의 여행 시기 & 날씨</h3>
                     <p>제주 여행은 사계절 모두 매력적이지만, 특히 <strong>3월~5월 (봄의 유채꽃과 벚꽃)</strong> 및 <strong>9월~11월 (가을 억새와 쾌적한 기온)</strong>이 가장 이상적입니다. 날씨 변화가 잦으므로 가벼운 외투와 바람막이를 챙기는 것이 좋습니다.</p>
                 </div>
-
                 <div class="space-y-4 pt-4 border-t border-slate-100">
                     <h3 class="font-bold text-slate-900 text-base">2. 이동 수단 및 동선 팁</h3>
                     <p>제주도는 면적이 넓어 효율적인 동선 계획이 중요합니다. 북쪽(제주시/애월)과 서귀포(중문), 동쪽(성산/우도)을 권역별로 나누어 하루씩 일정을 소화하면 이동 피로를 크게 줄일 수 있습니다. 본 패키지는 전용 차량/가이드 연계 또는 맞춤 렌터카 안내를 포함하여 편리합니다.</p>
                 </div>
-
                 <div class="space-y-4 pt-4 border-t border-slate-100">
                     <h3 class="font-bold text-slate-900 text-base">3. 제주 향토 미식 추천 (꼭 먹어야 할 음식)</h3>
                     <ul class="list-disc pl-5 space-y-2">
@@ -161,7 +153,6 @@ window._wingify_code || (function() {
                 </div>
             </section>
         </div>
-
         <!-- RIGHT SIDEBAR (STICKY PRICING BOX - VARIANT A) -->
         <div class="lg:col-span-1">
             <div class="bg-white/95 backdrop-blur-md rounded-2xl shadow-xl border border-slate-200/80 p-6 sticky top-20">
@@ -200,15 +191,13 @@ window._wingify_code || (function() {
             </div>
         </div>
     </div>
-
     <!-- REVIEWS SECTION (15 total reviews with Expand All feature) -->
     <section id="reviews" class="bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-sm border border-slate-200">
         <div class="flex items-center justify-between mb-6">
             <h2 class="text-xl font-bold text-slate-900 flex items-center">
                 <i class="fa-solid fa-comments text-sky-500 mr-2.5"></i> 실제 이용객 리얼 후기 <span class="text-sm font-normal text-slate-500 ml-2">(총 15개)</span>
             </h2>
-        </div>
-        
+        </div>       
         <!-- Reviews Grid Container -->
         <div id="reviewsContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             <!-- Review 1 -->
@@ -289,7 +278,6 @@ window._wingify_code || (function() {
                 <div class="mt-3 pt-2 border-t border-slate-200/60 flex items-center justify-between"><span class="text-xs text-slate-500 font-semibold">- 상욱 님</span><span class="text-amber-400 text-xs">★★★★★</span></div>
             </div>
         </div>
-
         <button onclick="toggleReviews()" id="reviewsBtn" class="mt-6 w-full py-3 bg-sky-50 hover:bg-sky-100 text-sky-700 font-bold text-sm rounded-xl transition flex items-center justify-center gap-2 border border-sky-100">
             <span>모든 이용 후기 보기 (총 15개)</span> <i class="fa-solid fa-chevron-down text-xs"></i>
         </button>
