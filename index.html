@@ -170,12 +170,12 @@ window._wingify_code || (function() {
                     <div class="text-[11px] text-slate-500 mt-1.5"><i class="fa-solid fa-circle-info mr-1"></i>(항공, 4성급 호텔, 주요 입장권 포함)</div>
                 </div>
                 <div class="space-y-4 mb-6 text-sm">
-                    <!-- CALENDAR DATE PICKER (최소 3일 후 자동 선택) -->
+                    <!-- CALENDAR DATE PICKER -->
                     <div>
                         <label class="block font-medium text-slate-700 mb-1.5"><i class="fa-regular fa-calendar-days text-sky-600 mr-1.5"></i>출발일 선택 (최소 3일 후)</label>
                         <input type="date" id="startDate" class="w-full border border-slate-300 rounded-xl px-3 py-2.5 bg-white text-slate-700 font-medium cursor-pointer focus:ring-2 focus:ring-sky-500 focus:outline-none shadow-sm">
                     </div>
-                    <!-- DYNAMIC PEOPLE INPUT (1~50명 자유 입력) -->
+                    <!-- DYNAMIC PEOPLE INPUT -->
                     <div>
                         <label class="block font-medium text-slate-700 mb-1.5"><i class="fa-solid fa-users text-sky-600 mr-1.5"></i>인원 선택 (명)</label>
                         <input type="number" id="peopleInput" min="1" max="50" value="1" oninput="updatePrice()" class="w-full border border-slate-300 rounded-xl px-3 py-2.5 bg-white text-slate-800 font-bold cursor-pointer focus:ring-2 focus:ring-sky-500 focus:outline-none shadow-sm">
@@ -312,7 +312,7 @@ window._wingify_code || (function() {
         updatePrice();
     });
 
-    // Hàm updatePrice chung cho cả Variant A và Variant B
+    // Hàm updatePrice chung, tự động nhận diện Variant A hay Variant B để tính toán chính xác
     function updatePrice() {
         const inputEl = document.getElementById('peopleInput');
         if (!inputEl) return;
@@ -326,14 +326,15 @@ window._wingify_code || (function() {
 
         const total = BASE_PRICE * count;
         
-        // Nếu là Variant A
+        // 1. Cập nhật cho Variant A (nếu phần tử tồn tại)
         const priceDisplay = document.getElementById('priceDisplay');
-        if (priceDisplay) {
+        const peopleLabel = document.getElementById('peopleLabel');
+        if (priceDisplay && peopleLabel) {
             priceDisplay.innerText = '₩' + total.toLocaleString();
-            document.getElementById('peopleLabel').innerText = `/ 총 ${count}인 기준`;
+            peopleLabel.innerText = `/ 총 ${count}인 기준`;
         }
         
-        // Nếu là Variant B (được render qua VWO)
+        // 2. Cập nhật cho Variant B (nếu phần tử tồn tại)
         const priceDisplayB = document.getElementById('priceDisplayB');
         if (priceDisplayB) {
             const dailyPrice = Math.round(total / 4);
