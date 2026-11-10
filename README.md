@@ -134,7 +134,7 @@ window._wingify_code || (function() {
             <section class="bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-sm border border-slate-200 space-y-6 text-sm text-slate-700">
                 <h2 class="text-xl font-bold text-slate-900 flex items-center">
                     <i class="fa-solid fa-book-open text-sky-600 mr-2.5"></i> 제주 여행 완벽 가이드 & 꿀팁
-                </h2>              
+                </h2>               
                 <div class="space-y-4">
                     <h3 class="font-bold text-slate-900 text-base">1. 제주도 3박 4일 최적의 여행 시기 & 날씨</h3>
                     <p>제주 여행은 사계절 모두 매력적이지만, 특히 <strong>3월~5월 (봄의 유채꽃과 벚꽃)</strong> 및 <strong>9월~11월 (가을 억새와 쾌적한 기온)</strong>이 가장 이상적입니다. 날씨 변화가 잦으므로 가벼운 외투와 바람막이를 챙기는 것이 좋습니다.</p>
@@ -143,7 +143,7 @@ window._wingify_code || (function() {
                     <h3 class="font-bold text-slate-900 text-base">2. 이동 수단 및 동선 팁</h3>
                     <p>제주도는 면적이 넓어 효율적인 동선 계획이 중요합니다. 북쪽(제주시/애월)과 서귀포(중문), 동쪽(성산/우도)을 권역별로 나누어 하루씩 일정을 소화하면 이동 피로를 크게 줄일 수 있습니다. 본 패키지는 전용 차량/가이드 연계 또는 맞춤 렌터카 안내를 포함하여 편리합니다.</p>
                 </div>
-                <div class="space-y-4 pt-4 border-t border-slate-100">
+              <div class="space-y-4 pt-4 border-t border-slate-100">
                     <h3 class="font-bold text-slate-900 text-base">3. 제주 향토 미식 추천 (꼭 먹어야 할 음식)</h3>
                     <ul class="list-disc pl-5 space-y-2">
                         <li><strong>제주 흑돼지 구이:</strong> 두툼한 육즙과 멜젓의 조화가 일품인 필수 코스</li>
@@ -197,9 +197,9 @@ window._wingify_code || (function() {
             <h2 class="text-xl font-bold text-slate-900 flex items-center">
                 <i class="fa-solid fa-comments text-sky-500 mr-2.5"></i> 실제 이용객 리얼 후기 <span class="text-sm font-normal text-slate-500 ml-2"> </span>
             </h2>
-        </div>       
+        </div>      
         <!-- Reviews Grid Container -->
-        <div id="reviewsContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div id="reviewsContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
             <!-- Review 1 -->
             <div class="p-4 bg-slate-50 rounded-xl border border-slate-100 flex flex-col justify-between shadow-sm">
                 <p class="text-slate-700 text-sm font-medium">"애월 카페거리랑 우도 스쿠터 일정이 진짜 완벽했어요! 오션뷰 숙소도 너무 깨끗했습니다."</p>
@@ -217,22 +217,15 @@ window._wingify_code || (function() {
                 </div>
             </div>
             <!-- Review 3 -->
-            <div class="p-4 bg-slate-50 rounded-xl border border-slate-100 flex flex-col justify-between shadow-sm">
+           <div class="p-4 bg-slate-50 rounded-xl border border-slate-100 flex flex-col justify-between shadow-sm">
                 <p class="text-slate-700 text-sm font-medium">"가성비 최고입니다. 이동 차량도 편하고 가이드분도 친절하셔서 편하게 다녀왔어요."</p>
                 <div class="mt-3 pt-2 border-t border-slate-200/60 flex items-center justify-between">
                     <span class="text-xs text-slate-500 font-semibold">- 이연 님</span>
                     <span class="text-amber-400 text-xs">★★★★★</span>
                 </div>
-            </div>           
+            </div>            
             <!-- Hidden reviews initially (5 to 15) -->
             <!-- Review 4 -->
-            <div class="p-4 bg-slate-50 rounded-xl border border-slate-100 flex flex-col justify-between shadow-sm">
-                <p class="text-slate-700 text-sm font-medium">"산방산 유채꽃밭 풍경이 정말 예술이었어요. 사진 찍기 좋아하는 분들께 강추합니다!"</p>
-                <div class="mt-3 pt-2 border-t border-slate-200/60 flex items-center justify-between">
-                    <span class="text-xs text-slate-500 font-semibold">- 최우 님</span>
-                    <span class="text-amber-400 text-xs">★★★★★</span>
-                </div>
-            </div>
             <div class="review-extra hidden p-4 bg-slate-50 rounded-xl border border-slate-100 flex flex-col justify-between shadow-sm">
                 <p class="text-slate-700 text-sm font-medium">"3박 4일 동안 숙소 뷰가 너무 좋아서 아침마다 힐링했습니다. 다음에도 또 이용할게요."</p>
                 <div class="mt-3 pt-2 border-t border-slate-200/60 flex items-center justify-between"><span class="text-xs text-slate-500 font-semibold">- 정아 님</span><span class="text-amber-400 text-xs">★★★★★</span></div>
@@ -412,7 +405,7 @@ window._wingify_code || (function() {
             btnText.innerText = "이용 후기 접기";
             btnIcon.className = "fa-solid fa-chevron-up text-xs";
         } else {
-            btnText.innerText = "모든 이용 후기 보기 (총 15개)";
+            btnText.innerText = "더 이용 후기 보기 ";
             btnIcon.className = "fa-solid fa-chevron-down text-xs";
         }
     }
