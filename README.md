@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Travel With Me - 제주도 감성 힐링 3박 4일</title>
+<title>Travel With Me - 제주도 오션뷰 호텔 & 핫플 감성 투어 (3박 4일)</title>
 <!-- Tailwind CSS & FontAwesome CDN -->
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -24,12 +24,12 @@ window._wingify_code || (function() {
         hide_element = 'body',
         hide_element_style =
         'opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;transition:none !important';
-    /* DO NOT EDIT BELOW THIS LINE */
     var n=window,i=document;if(-1<i.URL.indexOf('__wingify_disable__')||n._wingify_code)return;var t=!1,r=i.currentScript,nonce=r&&r.nonce,e={sT:settings_tolerance,hES:hide_element_style,hE:hide_element};try{e=Object.assign(e,JSON.parse(localStorage.getItem('_wingify_'+account_id+'_config')))}catch(e){}var code={script:r,nonce:nonce,settings_tolerance:function(){return e.sT},hide_element:function(){return performance.getEntriesByName('first-contentful-paint')[0]?'':e.hE},hide_element_style:function(){return'{'+e.hES+'}'},getVersion:function(){return version},finish:function(){var e;!t&&(t=!0,e=i.getElementById('_vis_opt_path_hides'))&&e.parentNode.removeChild(e)},finished:function(){return t},addScript:function(e){var t=i.createElement('script');t.src=e,nonce&&t.setAttribute('nonce',nonce),t.fetchPriority='high',i.head.appendChild(t)},init:function(){n._settings_timer=setTimeout(function(){code.finish()},this.settings_tolerance());var e,t=this.hide_element();t&&((e=i.createElement('style')).id='_vis_opt_path_hides',nonce&&e.setAttribute('nonce',nonce),e.textContent=t+this.hide_element_style(),i.head.appendChild(e)),this.addScript('https://edge.wingify.net/tag/'+account_id+'.js')}};n._wingify_code=code;code.init();})();
 </script> 
 <!--End Wingify Async SmartCode --> 
 </head>
 <body class="bg-gradient-to-br from-sky-50 via-slate-50 to-blue-50 text-slate-800 antialiased pb-20 min-h-screen">
+
 <!-- HEADER NAVIGATION -->
 <header class="bg-white/90 backdrop-blur-md border-b border-slate-200 sticky top-0 z-40 shadow-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
@@ -51,6 +51,7 @@ window._wingify_code || (function() {
         </div>
     </div>
 </header>
+
 <!-- MAIN PRODUCT SECTION -->
 <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 space-y-8">
     <div class="mb-4">
@@ -68,17 +69,23 @@ window._wingify_code || (function() {
             <div class="flex items-center"><i class="fa-solid fa-clock text-sky-500 mr-1.5"></i> 3박 4일</div>
         </div>
     </div>
+
     <!-- STABLE RESPONSIVE GRID LAYOUT -->
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
-        <!-- LEFT MAIN CONTENT (Gallery, Highlights, Itinerary) -->
+        <!-- LEFT MAIN CONTENT (Gallery, Highlights, Itinerary, Guide) -->
         <div class="lg:col-span-2 space-y-8">
-            <!-- GALLERY -->
+            
+            <!-- GALLERY WITH LIGHTBOX BUTTON -->
             <div class="space-y-4">
                 <div class="relative h-[340px] sm:h-[420px] rounded-2xl overflow-hidden shadow-xl bg-slate-100 border border-slate-200">
                     <img id="mainImage" src="IMG_0800.jpeg" alt="제주도 풍경" class="w-full h-full object-cover transition-all duration-300">
                     <div class="absolute top-4 left-4 bg-slate-900/80 text-white text-xs font-semibold px-3 py-1.5 rounded-full flex items-center gap-1.5 backdrop-blur-sm">
                         <i class="fa-solid fa-fire text-amber-400"></i> 요즘 가장 핫한 제주 패키지
                     </div>
+                    <!-- Nút mở bộ sưu tập ảnh toàn màn hình -->
+                    <button onclick="openGalleryModal(0)" class="absolute bottom-4 right-4 bg-black/70 hover:bg-black text-white text-xs font-bold px-3.5 py-2 rounded-xl backdrop-blur-md transition flex items-center gap-2 shadow-lg">
+                        <i class="fa-solid fa-images"></i> 전체 사진 보기 (6)
+                    </button>
                 </div>                
                 <!-- Horizontal Scrollable Thumbnails -->
                 <div class="flex space-x-3 overflow-x-auto pb-2 snap-x snap-mandatory hide-scrollbar">
@@ -88,22 +95,29 @@ window._wingify_code || (function() {
                     <img onclick="document.getElementById('mainImage').src=this.src" class="flex-none w-24 h-20 object-cover rounded-xl cursor-pointer hover:opacity-80 border-2 border-transparent hover:border-sky-500 transition shadow-sm snap-start" src="IMG_0796.webp" alt="돌하르방 해변">
                     <img onclick="document.getElementById('mainImage').src=this.src" class="flex-none w-24 h-20 object-cover rounded-xl cursor-pointer hover:opacity-80 border-2 border-transparent hover:border-sky-500 transition shadow-sm snap-start" src="IMG_0797.webp" alt="헬로제주 포토존">
                     <img onclick="document.getElementById('mainImage').src=this.src" class="flex-none w-24 h-20 object-cover rounded-xl cursor-pointer hover:opacity-80 border-2 border-transparent hover:border-sky-500 transition shadow-sm snap-start" src="IMG_0798.webp" alt="제주 해안 파도">
-                    <img onclick="document.getElementById('mainImage').src=this.src" class="flex-none w-24 h-20 object-cover rounded-xl cursor-pointer hover:opacity-80 border-2 border-transparent hover:border-sky-500 transition shadow-sm snap-start" src="IMG_0799.webp" alt="성산일출봉 산책로">
                 </div>
             </div>
-            <!-- HIGHLIGHTS -->
+
+            <!-- HIGHLIGHTS (COLLAPSIBLE: 3 default, expandable to 6) -->
             <section id="highlights" class="bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-sm border border-slate-200">
                 <h2 class="text-xl font-bold text-slate-900 mb-4 flex items-center">
                     <i class="fa-solid fa-wand-magic-sparkles text-amber-500 mr-2.5"></i> 제주 여행 핵심 포인트
                 </h2>
-                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-slate-700">
+                <ul id="highlightsList" class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-slate-700">
                     <li class="flex items-center space-x-2"><i class="fa-solid fa-circle-check text-emerald-500"></i><span>전 일정 4성급 오션뷰 리조트 숙박</span></li>
                     <li class="flex items-center space-x-2"><i class="fa-solid fa-circle-check text-emerald-500"></i><span>애월 감성 카페거리 & 인생샷 포토스팟</span></li>
                     <li class="flex items-center space-x-2"><i class="fa-solid fa-circle-check text-emerald-500"></i><span>우도(牛島) 섬 투어 및 전동스쿠터 포함</span></li>
-                    <li class="flex items-center space-x-2"><i class="fa-solid fa-circle-check text-emerald-500"></i><span>제주 명물 흑돼지 구이 & 해산물 특식 제공</span></li>
+                    <!-- Hidden items initially -->
+                    <li class="highlight-extra hidden flex items-center space-x-2"><i class="fa-solid fa-circle-check text-emerald-500"></i><span>제주 명물 흑돼지 구이 & 해산물 특식 제공</span></li>
+                    <li class="highlight-extra hidden flex items-center space-x-2"><i class="fa-solid fa-circle-check text-emerald-500"></i><span>카멜리아 힐 & 스누피 가든 입장권 포함</span></li>
+                    <li class="highlight-extra hidden flex items-center space-x-2"><i class="fa-solid fa-circle-check text-emerald-500"></i><span>사려니 숲길 피톤치드 힐링 트레킹</span></li>
                 </ul>
+                <button onclick="toggleHighlights()" id="highlightsBtn" class="mt-4 w-full py-2.5 bg-sky-50 hover:bg-sky-100 text-sky-700 font-semibold text-sm rounded-xl transition flex items-center justify-center gap-2 border border-sky-100">
+                    <span>포인트 더보기 (3개 더)</span> <i class="fa-solid fa-chevron-down text-xs"></i>
+                </button>
             </section>
-            <!-- ITINERARY -->
+
+            <!-- ITINERARY (COLLAPSIBLE: 2 days default, expandable to 4 days) -->
             <section id="itinerary" class="bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-sm border border-slate-200">
                 <h2 class="text-xl font-bold text-slate-900 mb-6 flex items-center">
                     <i class="fa-solid fa-route text-sky-600 mr-2.5"></i> 트렌디 요약 일정표 (3박 4일)
@@ -111,11 +125,43 @@ window._wingify_code || (function() {
                 <div class="space-y-4 text-sm text-slate-600">
                     <p><strong>1일차:</strong> 제주공항 도착 - 애월 해안도로 드라이브 - 감성 카페거리 Check-in - 용두암 일몰 감상</p>
                     <p><strong>2일차:</strong> 카멜리아 힐(또는 스누피 가든) 인생샷 투어 - 중문 주상절리 - 서귀포 올레시장 야시장 탐방</p>
-                    <p><strong>3일차:</strong> 성산일출봉 탐방 - 우도 도항 및 전동스쿠터 자유 여행 - 제주 흑돼지 구이 저녁 특식</p>
-                    <p><strong>4일차:</strong> 사려니 숲길 힐링 산책 - 동문시장 오메기떡 & 감귤 기념품 쇼핑 - 제주공항 출발</p>
+                    <div id="itineraryExtra" class="space-y-4 hidden pt-2">
+                        <p><strong>3일차:</strong> 성산일출봉 탐방 - 우도 도항 및 전동스쿠터 자유 여행 - 제주 흑돼지 구이 저녁 특식</p>
+                        <p><strong>4일차:</strong> 사려니 숲길 힐링 산책 - 동문시장 오메기떡 & 감귤 기념품 쇼핑 - 제주공항 출발</p>
+                    </div>
+                </div>
+                <button onclick="toggleItinerary()" id="itineraryBtn" class="mt-4 w-full py-2.5 bg-sky-50 hover:bg-sky-100 text-sky-700 font-semibold text-sm rounded-xl transition flex items-center justify-center gap-2 border border-sky-100">
+                    <span>전체 일정 3박 4일 모두 보기</span> <i class="fa-solid fa-chevron-down text-xs"></i>
+                </button>
+            </section>
+
+            <!-- DETAILED GUIDE SECTIONS (Expanded Jeju travel guide inspired by reference) -->
+            <section class="bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-sm border border-slate-200 space-y-6 text-sm text-slate-700">
+                <h2 class="text-xl font-bold text-slate-900 flex items-center">
+                    <i class="fa-solid fa-book-open text-sky-600 mr-2.5"></i> 제주 여행 완벽 가이드 & 꿀팁
+                </h2>
+                
+                <div class="space-y-4">
+                    <h3 class="font-bold text-slate-900 text-base">1. 제주도 3박 4일 최적의 여행 시기 & 날씨</h3>
+                    <p>제주 여행은 사계절 모두 매력적이지만, 특히 <strong>3월~5월 (봄의 유채꽃과 벚꽃)</strong> 및 <strong>9월~11월 (가을 억새와 쾌적한 기온)</strong>이 가장 이상적입니다. 날씨 변화가 잦으므로 가벼운 외투와 바람막이를 챙기는 것이 좋습니다.</p>
+                </div>
+
+                <div class="space-y-4 pt-4 border-t border-slate-100">
+                    <h3 class="font-bold text-slate-900 text-base">2. 이동 수단 및 동선 팁</h3>
+                    <p>제주도는 면적이 넓어 효율적인 동선 계획이 중요합니다. 북쪽(제주시/애월)과 서귀포(중문), 동쪽(성산/우도)을 권역별로 나누어 하루씩 일정을 소화하면 이동 피로를 크게 줄일 수 있습니다. 본 패키지는 전용 차량/가이드 연계 또는 맞춤 렌터카 안내를 포함하여 편리합니다.</p>
+                </div>
+
+                <div class="space-y-4 pt-4 border-t border-slate-100">
+                    <h3 class="font-bold text-slate-900 text-base">3. 제주 향토 미식 추천 (꼭 먹어야 할 음식)</h3>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>제주 흑돼지 구이:</strong> 두툼한 육즙과 멜젓의 조화가 일품인 필수 코스</li>
+                        <li><strong>성산 전복돌솥밥 & 해물뚝배기:</strong> 신선한 해산물이 가득 담긴 영양 만점 식사</li>
+                        <li><strong>애월/월정리 오션뷰 카페 디저트:</strong> 한라봉 에이드와 감성 감귤 케이크</li>
+                    </ul>
                 </div>
             </section>
         </div>
+
         <!-- RIGHT SIDEBAR (STICKY PRICING BOX - VARIANT A) -->
         <div class="lg:col-span-1">
             <div class="bg-white/95 backdrop-blur-md rounded-2xl shadow-xl border border-slate-200/80 p-6 sticky top-20">
@@ -154,89 +200,103 @@ window._wingify_code || (function() {
             </div>
         </div>
     </div>
-    <!-- REVIEWS CAROUSEL -->
+
+    <!-- REVIEWS SECTION (15 total reviews with Expand All feature) -->
     <section id="reviews" class="bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-sm border border-slate-200">
-        <div class="flex items-center justify-between mb-4">
+        <div class="flex items-center justify-between mb-6">
             <h2 class="text-xl font-bold text-slate-900 flex items-center">
-                <i class="fa-solid fa-comments text-sky-500 mr-2.5"></i> 실제 이용객 리얼 후기
+                <i class="fa-solid fa-comments text-sky-500 mr-2.5"></i> 실제 이용객 리얼 후기 <span class="text-sm font-normal text-slate-500 ml-2">(총 15개)</span>
             </h2>
-            <span class="text-xs text-slate-400 flex items-center"><i class="fa-solid fa-arrows-left-right mr-1"></i> 옆으로 슬라이드</span>
         </div>
-        <div class="flex space-x-4 overflow-x-auto pb-4 snap-x snap-mandatory hide-scrollbar">
-            <div class="flex-none w-72 sm:w-80 snap-start p-4 bg-slate-50 rounded-xl border border-slate-100 flex flex-col justify-between shadow-sm">
+        
+        <!-- Reviews Grid Container -->
+        <div id="reviewsContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- Review 1 -->
+            <div class="p-4 bg-slate-50 rounded-xl border border-slate-100 flex flex-col justify-between shadow-sm">
                 <p class="text-slate-700 text-sm font-medium">"애월 카페거리랑 우도 스쿠터 일정이 진짜 완벽했어요! 오션뷰 숙소도 너무 깨끗했습니다."</p>
                 <div class="mt-3 pt-2 border-t border-slate-200/60 flex items-center justify-between">
                     <span class="text-xs text-slate-500 font-semibold">- 김현 님</span>
                     <span class="text-amber-400 text-xs">★★★★★</span>
                 </div>
             </div>
-            <div class="flex-none w-72 sm:w-80 snap-start p-4 bg-slate-50 rounded-xl border border-slate-100 flex flex-col justify-between shadow-sm">
+            <!-- Review 2 -->
+            <div class="p-4 bg-slate-50 rounded-xl border border-slate-100 flex flex-col justify-between shadow-sm">
                 <p class="text-slate-700 text-sm font-medium">"일정이 여유로워서 인생샷 많이 건졌어요. 부모님도 흑돼지 특식에 너무 만족하셨습니다."</p>
                 <div class="mt-3 pt-2 border-t border-slate-200/60 flex items-center justify-between">
                     <span class="text-xs text-slate-500 font-semibold">- 박준 님</span>
                     <span class="text-amber-400 text-xs">★★★★★</span>
                 </div>
             </div>
-            <div class="flex-none w-72 sm:w-80 snap-start p-4 bg-slate-50 rounded-xl border border-slate-100 flex flex-col justify-between shadow-sm">
+            <!-- Review 3 -->
+            <div class="p-4 bg-slate-50 rounded-xl border border-slate-100 flex flex-col justify-between shadow-sm">
                 <p class="text-slate-700 text-sm font-medium">"가성비 최고입니다. 이동 차량도 편하고 가이드분도 친절하셔서 편하게 다녀왔어요."</p>
                 <div class="mt-3 pt-2 border-t border-slate-200/60 flex items-center justify-between">
                     <span class="text-xs text-slate-500 font-semibold">- 이연 님</span>
                     <span class="text-amber-400 text-xs">★★★★★</span>
                 </div>
             </div>
-            <div class="flex-none w-72 sm:w-80 snap-start p-4 bg-slate-50 rounded-xl border border-slate-100 flex flex-col justify-between shadow-sm">
+            <!-- Review 4 -->
+            <div class="p-4 bg-slate-50 rounded-xl border border-slate-100 flex flex-col justify-between shadow-sm">
                 <p class="text-slate-700 text-sm font-medium">"산방산 유채꽃밭 풍경이 정말 예술이었어요. 사진 찍기 좋아하는 분들께 강추합니다!"</p>
                 <div class="mt-3 pt-2 border-t border-slate-200/60 flex items-center justify-between">
                     <span class="text-xs text-slate-500 font-semibold">- 최우 님</span>
                     <span class="text-amber-400 text-xs">★★★★★</span>
                 </div>
             </div>
-            <div class="flex-none w-72 sm:w-80 snap-start p-4 bg-slate-50 rounded-xl border border-slate-100 flex flex-col justify-between shadow-sm">
+            <!-- Hidden reviews initially (5 to 15) -->
+            <div class="review-extra hidden p-4 bg-slate-50 rounded-xl border border-slate-100 flex flex-col justify-between shadow-sm">
                 <p class="text-slate-700 text-sm font-medium">"3박 4일 동안 숙소 뷰가 너무 좋아서 아침마다 힐링했습니다. 다음에도 또 이용할게요."</p>
-                <div class="mt-3 pt-2 border-t border-slate-200/60 flex items-center justify-between">
-                    <span class="text-xs text-slate-500 font-semibold">- 정아 님</span>
-                    <span class="text-amber-400 text-xs">★★★★★</span>
-                </div>
+                <div class="mt-3 pt-2 border-t border-slate-200/60 flex items-center justify-between"><span class="text-xs text-slate-500 font-semibold">- 정아 님</span><span class="text-amber-400 text-xs">★★★★★</span></div>
             </div>
-            <div class="flex-none w-72 sm:w-80 snap-start p-4 bg-slate-50 rounded-xl border border-slate-100 flex flex-col justify-between shadow-sm">
+            <div class="review-extra hidden p-4 bg-slate-50 rounded-xl border border-slate-100 flex flex-col justify-between shadow-sm">
                 <p class="text-slate-700 text-sm font-medium">"음식이 하나같이 다 맛있었어요! 특히 흑돼지 구이랑 해산물 모듬은 잊을 수 없습니다."</p>
-                <div class="mt-3 pt-2 border-t border-slate-200/60 flex items-center justify-between">
-                    <span class="text-xs text-slate-500 font-semibold">- 강훈 님</span>
-                    <span class="text-amber-400 text-xs">★★★★★</span>
-                </div>
+                <div class="mt-3 pt-2 border-t border-slate-200/60 flex items-center justify-between"><span class="text-xs text-slate-500 font-semibold">- 강훈 님</span><span class="text-amber-400 text-xs">★★★★★</span></div>
             </div>
-            <div class="flex-none w-72 sm:w-80 snap-start p-4 bg-slate-50 rounded-xl border border-slate-100 flex flex-col justify-between shadow-sm">
+            <div class="review-extra hidden p-4 bg-slate-50 rounded-xl border border-slate-100 flex flex-col justify-between shadow-sm">
                 <p class="text-slate-700 text-sm font-medium">"친구들과 우도에서 스쿠터 타던 시간이 제일 기억에 남네요. 강력 추천합니다!"</p>
-                <div class="mt-3 pt-2 border-t border-slate-200/60 flex items-center justify-between">
-                    <span class="text-xs text-slate-500 font-semibold">- 윤서 님</span>
-                    <span class="text-amber-400 text-xs">★★★★★</span>
-                </div>
+                <div class="mt-3 pt-2 border-t border-slate-200/60 flex items-center justify-between"><span class="text-xs text-slate-500 font-semibold">- 윤서 님</span><span class="text-amber-400 text-xs">★★★★★</span></div>
             </div>
-            <div class="flex-none w-72 sm:w-80 snap-start p-4 bg-slate-50 rounded-xl border border-slate-100 flex flex-col justify-between shadow-sm">
+            <div class="review-extra hidden p-4 bg-slate-50 rounded-xl border border-slate-100 flex flex-col justify-between shadow-sm">
                 <p class="text-slate-700 text-sm font-medium">"부모님 환갑 여행으로 다녀왔는데 일정이 너무 빡빡하지 않아 다들 만족해하셨어요."</p>
-                <div class="mt-3 pt-2 border-t border-slate-200/60 flex items-center justify-between">
-                    <span class="text-xs text-slate-500 font-semibold">- 한민 님</span>
-                    <span class="text-amber-400 text-xs">★★★★★</span>
-                </div>
+                <div class="mt-3 pt-2 border-t border-slate-200/60 flex items-center justify-between"><span class="text-xs text-slate-500 font-semibold">- 한민 님</span><span class="text-amber-400 text-xs">★★★★★</span></div>
             </div>
-            <div class="flex-none w-72 sm:w-80 snap-start p-4 bg-slate-50 rounded-xl border border-slate-100 flex flex-col justify-between shadow-sm">
+            <div class="review-extra hidden p-4 bg-slate-50 rounded-xl border border-slate-100 flex flex-col justify-between shadow-sm">
                 <p class="text-slate-700 text-sm font-medium">"가이드님이 맛집이랑 포토스팟을 잘 알려주셔서 정말 알찬 힐링 여행이었습니다."</p>
-                <div class="mt-3 pt-2 border-t border-slate-200/60 flex items-center justify-between">
-                    <span class="text-xs text-slate-500 font-semibold">- 오진 님</span>
-                    <span class="text-amber-400 text-xs">★★★★★</span>
-                </div>
+                <div class="mt-3 pt-2 border-t border-slate-200/60 flex items-center justify-between"><span class="text-xs text-slate-500 font-semibold">- 오진 님</span><span class="text-amber-400 text-xs">★★★★★</span></div>
             </div>
-            <div class="flex-none w-72 sm:w-80 snap-start p-4 bg-slate-50 rounded-xl border border-slate-100 flex flex-col justify-between shadow-sm">
+            <div class="review-extra hidden p-4 bg-slate-50 rounded-xl border border-slate-100 flex flex-col justify-between shadow-sm">
                 <p class="text-slate-700 text-sm font-medium">"가격 대비 알찬 구성과 효율적인 이동 동선 덕분에 피곤함 없이 즐겁게 다녀왔습니다."</p>
-                <div class="mt-3 pt-2 border-t border-slate-200/60 flex items-center justify-between">
-                    <span class="text-xs text-slate-500 font-semibold">- 임재 님</span>
-                    <span class="text-amber-400 text-xs">★★★★★</span>
-                </div>
+                <div class="mt-3 pt-2 border-t border-slate-200/60 flex items-center justify-between"><span class="text-xs text-slate-500 font-semibold">- 임재 님</span><span class="text-amber-400 text-xs">★★★★★</span></div>
+            </div>
+            <div class="review-extra hidden p-4 bg-slate-50 rounded-xl border border-slate-100 flex flex-col justify-between shadow-sm">
+                <p class="text-slate-700 text-sm font-medium">"날씨도 좋고 패키지 구성도 알차서 여자친구랑 평생 잊지 못할 추억 만들고 갑니다."</p>
+                <div class="mt-3 pt-2 border-t border-slate-200/60 flex items-center justify-between"><span class="text-xs text-slate-500 font-semibold">- 도영 님</span><span class="text-amber-400 text-xs">★★★★★</span></div>
+            </div>
+            <div class="review-extra hidden p-4 bg-slate-50 rounded-xl border border-slate-100 flex flex-col justify-between shadow-sm">
+                <p class="text-slate-700 text-sm font-medium">"호텔 조식이 너무 맛있었고 룸컨디션도 최상급이었습니다. 적극 추천해요!"</p>
+                <div class="mt-3 pt-2 border-t border-slate-200/60 flex items-center justify-between"><span class="text-xs text-slate-500 font-semibold">- 수진 님</span><span class="text-amber-400 text-xs">★★★★★</span></div>
+            </div>
+            <div class="review-extra hidden p-4 bg-slate-50 rounded-xl border border-slate-100 flex flex-col justify-between shadow-sm">
+                <p class="text-slate-700 text-sm font-medium">"혼자 여행인데도 전혀 외롭지 않게 세심하게 챙겨주셔서 안전하게 잘 다녀왔습니다."</p>
+                <div class="mt-3 pt-2 border-t border-slate-200/60 flex items-center justify-between"><span class="text-xs text-slate-500 font-semibold">- 민재 님</span><span class="text-amber-400 text-xs">★★★★★</span></div>
+            </div>
+            <div class="review-extra hidden p-4 bg-slate-50 rounded-xl border border-slate-100 flex flex-col justify-between shadow-sm">
+                <p class="text-slate-700 text-sm font-medium">"스누피 가든이랑 카멜리아 힐 코스가 동화 속 같았어요. 사진 백 장은 건졌네요."</p>
+                <div class="mt-3 pt-2 border-t border-slate-200/60 flex items-center justify-between"><span class="text-xs text-slate-500 font-semibold">- 지혜 님</span><span class="text-amber-400 text-xs">★★★★★</span></div>
+            </div>
+            <div class="review-extra hidden p-4 bg-slate-50 rounded-xl border border-slate-100 flex flex-col justify-between shadow-sm">
+                <p class="text-slate-700 text-sm font-medium">"처음 패키지 여행 이용해 보는데 패키지에 대한 편견을 완전히 깨준 훌륭한 상품입니다."</p>
+                <div class="mt-3 pt-2 border-t border-slate-200/60 flex items-center justify-between"><span class="text-xs text-slate-500 font-semibold">- 상욱 님</span><span class="text-amber-400 text-xs">★★★★★</span></div>
             </div>
         </div>
+
+        <button onclick="toggleReviews()" id="reviewsBtn" class="mt-6 w-full py-3 bg-sky-50 hover:bg-sky-100 text-sky-700 font-bold text-sm rounded-xl transition flex items-center justify-center gap-2 border border-sky-100">
+            <span>모든 이용 후기 보기 (총 15개)</span> <i class="fa-solid fa-chevron-down text-xs"></i>
+        </button>
     </section>
 </main>
-<!-- 📌 여기에 모달 HTML 코드 삽입 -->
+
+<!-- MODAL: BOOKING CONFIRMATION -->
 <div id="customModal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm">
     <div class="bg-white rounded-2xl p-6 max-w-sm w-full mx-4 shadow-2xl transform transition-all">
         <div class="text-center">
@@ -251,64 +311,149 @@ window._wingify_code || (function() {
         </div>
     </div>
 </div>
+
+<!-- MODAL: IMAGE GALLERY LIGHTBOX -->
+<div id="galleryModal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/90">
+    <button onclick="closeGalleryModal()" class="absolute top-6 right-6 text-white text-3xl hover:text-sky-450 transition z-50"><i class="fa-solid fa-xmark"></i></button>
+    <button onclick="prevGalleryImage()" class="absolute left-4 sm:left-8 text-white text-3xl bg-black/50 hover:bg-black/80 w-12 h-12 rounded-full flex items-center justify-center transition z-50"><i class="fa-solid fa-chevron-left"></i></button>
+    <button onclick="nextGalleryImage()" class="absolute right-4 sm:right-8 text-white text-3xl bg-black/50 hover:bg-black/80 w-12 h-12 rounded-full flex items-center justify-center transition z-50"><i class="fa-solid fa-chevron-right"></i></button>
+    <div class="max-w-4xl max-h-[80vh] px-4 text-center">
+        <img id="modalGalleryImg" src="" alt="확대 이미지" class="max-h-[70vh] max-w-full mx-auto rounded-xl shadow-2xl object-contain">
+        <div id="modalGalleryCaption" class="text-white text-sm mt-4 font-medium"></div>
+    </div>
+</div>
+
+<!-- JAVASCRIPT LOGIC -->
 <script>
-    const DAILY_PRICE = 99750;
-    const BASE_TOTAL_PRICE = 399000;
-    // Thiết lập ngày khởi hành tự động (tối thiểu 3 ngày sau) và khởi tạo giá ngay khi trang tải
+    const BASE_PRICE = 399000;
+    
+    // Gallery images array
+    const galleryImages = [
+        { src: "IMG_0800.jpeg", caption: "제주도 전경 및 웰컴 포토존" },
+        { src: "IMG_0802.jpeg", caption: "산방산 유채꽃밭" },
+        { src: "IMG_0801.jpeg", caption: "성산일출봉 해안 산책로" },
+        { src: "IMG_0796.webp", caption: "돌하르방 푸른 해변" },
+        { src: "IMG_0797.webp", caption: "헬로제주 감성 포토존" },
+        { src: "IMG_0798.webp", caption: "제주 에메랄드빛 해안 파도" }
+    ];
+    let currentGalleryIndex = 0;
+
     document.addEventListener("DOMContentLoaded", function() {
         const dateInput = document.getElementById('startDate');
         if (dateInput) {
             const targetDate = new Date();
             targetDate.setDate(targetDate.getDate() + 3);
             const minStr = targetDate.toISOString().split('T')[0];
-            // Khóa ngày trong quá khứ và các ngày cận kề (tối thiểu 3 ngày sau)
             dateInput.min = minStr;
             dateInput.value = minStr;
         }
-        // Gọi hàm cập nhật giá để hiển thị ngay lập tức khi load trang giống biến thể A
-        if (typeof updatePriceB === 'function') {
-            updatePriceB();
-        }
+        updatePriceA();
     });
-    // Hàm tính toán và cập nhật giá theo số lượng người
-    function updatePriceB() {
-        const peopleSelect = document.getElementById('peopleSelectB');
-        if (!peopleSelect) return;
-        const count = parseInt(peopleSelect.value);
-        const dailyTotal = DAILY_PRICE * count;
-        const fullTotal = BASE_TOTAL_PRICE * count;
-        const priceDisplay = document.getElementById('priceDisplayB');
-        const totalPriceNotice = document.getElementById('totalPriceNotice');
-        if (priceDisplay) {
-            priceDisplay.innerText = '₩' + dailyTotal.toLocaleString() + '~';
-        }
-        if (totalPriceNotice) {
-            totalPriceNotice.innerHTML = `(3박 4일 총액: <span class="text-slate-900 font-bold">₩${fullTotal.toLocaleString()}</span>)`;
-        }
+
+    function updatePriceA() {
+        const selectEl = document.getElementById('peopleSelect');
+        if (!selectEl) return;
+        const count = parseInt(selectEl.value);
+        const total = BASE_PRICE * count;
+        document.getElementById('priceDisplay').innerText = '₩' + total.toLocaleString();
+        document.getElementById('peopleLabel').innerText = `/ 총 ${count}인 기준`;
     }
-    // Xử lý sự kiện đặt chỗ và hiển thị modal giữa màn hình
+
     function handleBooking(variant) {
-        const selectEl = document.getElementById('peopleSelectB');
+        const selectEl = document.getElementById('peopleSelect');
         const count = selectEl ? selectEl.value : 1;
-        const dateEl = document.getElementById('startDate');
-        const selectedDate = dateEl ? dateEl.value : ''; 
+        const selectedDate = document.getElementById('startDate').value;
+        
         const modalText = document.getElementById('modalText');
         if (modalText) {
             modalText.innerText = `출발일: ${selectedDate} / 예약 인원: ${count}명\n성공적으로 예약 요청이 접수되었습니다! ✈️🌸`;
         }
-        const modal = document.getElementById('customModal');
-        if (modal) {
-            modal.classList.remove('hidden');
-        }
+        document.getElementById('customModal').classList.remove('hidden');
+
         let currentClicks = localStorage.getItem('clicks_variant_' + variant) || 0;
         localStorage.setItem('clicks_variant_' + variant, parseInt(currentClicks) + 1);
     }
-    // Đóng Modal
+
     function closeModal() {
-        const modal = document.getElementById('customModal');
-        if (modal) {
-            modal.classList.add('hidden');
+        document.getElementById('customModal').classList.add('hidden');
+    }
+
+    // Toggle Highlights (3 -> 6)
+    function toggleHighlights() {
+        const extras = document.querySelectorAll('.highlight-extra');
+        const btnText = document.querySelector('#highlightsBtn span');
+        const btnIcon = document.querySelector('#highlightsBtn i');
+        let isHidden = extras[0].classList.contains('hidden');
+
+        extras.forEach(el => el.classList.toggle('hidden'));
+        if (isHidden) {
+            btnText.innerText = "포인트 접기";
+            btnIcon.className = "fa-solid fa-chevron-up text-xs";
+        } else {
+            btnText.innerText = "포인트 더보기 (3개 더)";
+            btnIcon.className = "fa-solid fa-chevron-down text-xs";
         }
+    }
+
+    // Toggle Itinerary (2 days -> 4 days)
+    function toggleItinerary() {
+        const extraDays = document.getElementById('itineraryExtra');
+        const btnText = document.querySelector('#itineraryBtn span');
+        const btnIcon = document.querySelector('#itineraryBtn i');
+        let isHidden = extraDays.classList.contains('hidden');
+
+        extraDays.classList.toggle('hidden');
+        if (isHidden) {
+            btnText.innerText = "일정 접기";
+            btnIcon.className = "fa-solid fa-chevron-up text-xs";
+        } else {
+            btnText.innerText = "전체 일정 3박 4일 모두 보기";
+            btnIcon.className = "fa-solid fa-chevron-down text-xs";
+        }
+    }
+
+    // Toggle Reviews (4 -> 15)
+    function toggleReviews() {
+        const extras = document.querySelectorAll('.review-extra');
+        const btnText = document.querySelector('#reviewsBtn span');
+        const btnIcon = document.querySelector('#reviewsBtn i');
+        let isHidden = extras[0].classList.contains('hidden');
+
+        extras.forEach(el => el.classList.toggle('hidden'));
+        if (isHidden) {
+            btnText.innerText = "이용 후기 접기";
+            btnIcon.className = "fa-solid fa-chevron-up text-xs";
+        } else {
+            btnText.innerText = "모든 이용 후기 보기 (총 15개)";
+            btnIcon.className = "fa-solid fa-chevron-down text-xs";
+        }
+    }
+
+    // Gallery Modal Functions
+    function openGalleryModal(index) {
+        currentGalleryIndex = index;
+        updateGalleryModal();
+        document.getElementById('galleryModal').classList.remove('hidden');
+    }
+
+    function closeGalleryModal() {
+        document.getElementById('galleryModal').classList.add('hidden');
+    }
+
+    function prevGalleryImage() {
+        currentGalleryIndex = (currentGalleryIndex - 1 + galleryImages.length) % galleryImages.length;
+        updateGalleryModal();
+    }
+
+    function nextGalleryImage() {
+        currentGalleryIndex = (currentGalleryIndex + 1) % galleryImages.length;
+        updateGalleryModal();
+    }
+
+    function updateGalleryModal() {
+        const imgObj = galleryImages[currentGalleryIndex];
+        document.getElementById('modalGalleryImg').src = imgObj.src;
+        document.getElementById('modalGalleryCaption').innerText = `(${currentGalleryIndex + 1} / ${galleryImages.length}) ${imgObj.caption}`;
     }
 </script>
 </body>
