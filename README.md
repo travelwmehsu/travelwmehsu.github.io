@@ -72,7 +72,7 @@ window._wingify_code || (function() {
     <!-- STABLE RESPONSIVE GRID LAYOUT -->
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
         <!-- LEFT MAIN CONTENT -->
-        <div class="lg:col-span-2 space-y-8">     
+        <div class="lg:col-span-2 space-y-8">    
             <!-- GALLERY WITH LIGHTBOX BUTTON -->
             <div class="space-y-4">
                 <div class="relative h-[340px] sm:h-[420px] rounded-2xl overflow-hidden shadow-xl bg-slate-100 border border-slate-200">
@@ -111,7 +111,7 @@ window._wingify_code || (function() {
                     <span>포인트 더보기</span> <i class="fa-solid fa-chevron-down text-xs"></i>
                 </button>
             </section>
-            <!-- ITINERARY -->
+         <!-- ITINERARY -->
             <section id="itinerary" class="bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-sm border border-slate-200">
                 <h2 class="text-xl font-bold text-slate-900 mb-6 flex items-center">
                     <i class="fa-solid fa-route text-sky-600 mr-2.5"></i> 트렌디 요약 일정표 (3박 4일)
@@ -306,6 +306,7 @@ window._wingify_code || (function() {
     });
 
     // Hàm updatePrice chung, tự động nhận diện Variant A hay Variant B để tính toán chính xác
+    // Hàm updatePrice chuẩn gộp chung cho cả Variant A và Variant B
     function updatePrice() {
         const inputEl = document.getElementById('peopleInput');
         if (!inputEl) return;
@@ -317,9 +318,9 @@ window._wingify_code || (function() {
             inputEl.value = 50;
         }
 
-        const total = BASE_PRICE * count;
+        const total = BASE_PRICE * count; // Tổng tiền = 399,000 * số người
         
-        // 1. Cập nhật cho Variant A (nếu phần tử tồn tại)
+        // 1. Nếu đang hiển thị Variant A (Tổng giá)
         const priceDisplay = document.getElementById('priceDisplay');
         const peopleLabel = document.getElementById('peopleLabel');
         if (priceDisplay && peopleLabel) {
@@ -327,11 +328,13 @@ window._wingify_code || (function() {
             peopleLabel.innerText = `/ 총 ${count}인 기준`;
         }
         
-        // 2. Cập nhật cho Variant B (nếu phần tử tồn tại)
+        // 2. Nếu đang hiển thị Variant B (Giá theo ngày tự động tính theo số người)
         const priceDisplayB = document.getElementById('priceDisplayB');
         if (priceDisplayB) {
-            const dailyPrice = Math.round(total / 4);
+            const dailyPrice = Math.round(total / 4); // Lấy tổng tiền theo số người chia cho 4 ngày
             priceDisplayB.innerText = '₩' + dailyPrice.toLocaleString() + '~';
+            
+            const peopleLabelB = priceDisplayB.parentElement.nextElementSibling; // Nhãn số người nếu có
             const totalPriceNotice = document.getElementById('totalPriceNotice');
             if (totalPriceNotice) {
                 totalPriceNotice.innerHTML = `(3박 4일 총액: <span class="text-slate-900 font-bold">₩${total.toLocaleString()}</span>)`;
