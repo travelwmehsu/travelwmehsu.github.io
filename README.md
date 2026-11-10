@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Travel With Me - 제주도 오션뷰 호텔 & 핫플 감성 투어 (3박 4일)</title>
-<!-- Tailwind CSS & FontAwesome CDN -->
+<!-- Tailwind CSS & FontAwesome CDN --> 
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet">
@@ -72,7 +72,7 @@ window._wingify_code || (function() {
     <!-- STABLE RESPONSIVE GRID LAYOUT -->
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
         <!-- LEFT MAIN CONTENT -->
-        <div class="lg:col-span-2 space-y-8">    
+        <div class="lg:col-span-2 space-y-8">     
             <!-- GALLERY WITH LIGHTBOX BUTTON -->
             <div class="space-y-4">
                 <div class="relative h-[340px] sm:h-[420px] rounded-2xl overflow-hidden shadow-xl bg-slate-100 border border-slate-200">
@@ -111,7 +111,7 @@ window._wingify_code || (function() {
                     <span>포인트 더보기</span> <i class="fa-solid fa-chevron-down text-xs"></i>
                 </button>
             </section>
-         <!-- ITINERARY -->
+            <!-- ITINERARY -->
             <section id="itinerary" class="bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-sm border border-slate-200">
                 <h2 class="text-xl font-bold text-slate-900 mb-6 flex items-center">
                     <i class="fa-solid fa-route text-sky-600 mr-2.5"></i> 트렌디 요약 일정표 (3박 4일)
