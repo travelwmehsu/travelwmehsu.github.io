@@ -72,7 +72,7 @@ window._wingify_code || (function() {
     <!-- STABLE RESPONSIVE GRID LAYOUT -->
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
         <!-- LEFT MAIN CONTENT (Gallery, Highlights, Itinerary, Guide) -->
-        <div class="lg:col-span-2 space-y-8">
+        <div class="lg:col-span-2 space-y-8">            
             <!-- GALLERY WITH LIGHTBOX BUTTON -->
             <div class="space-y-4">
                 <div class="relative h-[340px] sm:h-[420px] rounded-2xl overflow-hidden shadow-xl bg-slate-100 border border-slate-200">
@@ -110,7 +110,7 @@ window._wingify_code || (function() {
                     <li class="highlight-extra hidden flex items-center space-x-2"><i class="fa-solid fa-circle-check text-emerald-500"></i><span>사려니 숲길 피톤치드 힐링 트레킹</span></li>
                 </ul>
                 <button onclick="toggleHighlights()" id="highlightsBtn" class="mt-4 w-full py-2.5 bg-sky-50 hover:bg-sky-100 text-sky-700 font-semibold text-sm rounded-xl transition flex items-center justify-center gap-2 border border-sky-100">
-                    <span>포인트 더보기 (3개 더)</span> <i class="fa-solid fa-chevron-down text-xs"></i>
+                    <span>포인트 더보기</span> <i class="fa-solid fa-chevron-down text-xs"></i>
                 </button>
             </section>
             <!-- ITINERARY (COLLAPSIBLE: 2 days default, expandable to 4 days) -->
@@ -134,7 +134,7 @@ window._wingify_code || (function() {
             <section class="bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-sm border border-slate-200 space-y-6 text-sm text-slate-700">
                 <h2 class="text-xl font-bold text-slate-900 flex items-center">
                     <i class="fa-solid fa-book-open text-sky-600 mr-2.5"></i> 제주 여행 완벽 가이드 & 꿀팁
-                </h2>               
+                </h2>             
                 <div class="space-y-4">
                     <h3 class="font-bold text-slate-900 text-base">1. 제주도 3박 4일 최적의 여행 시기 & 날씨</h3>
                     <p>제주 여행은 사계절 모두 매력적이지만, 특히 <strong>3월~5월 (봄의 유채꽃과 벚꽃)</strong> 및 <strong>9월~11월 (가을 억새와 쾌적한 기온)</strong>이 가장 이상적입니다. 날씨 변화가 잦으므로 가벼운 외투와 바람막이를 챙기는 것이 좋습니다.</p>
@@ -195,9 +195,9 @@ window._wingify_code || (function() {
     <section id="reviews" class="bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-sm border border-slate-200">
         <div class="flex items-center justify-between mb-6">
             <h2 class="text-xl font-bold text-slate-900 flex items-center">
-                <i class="fa-solid fa-comments text-sky-500 mr-2.5"></i> 실제 이용객 리얼 후기 <span class="text-sm font-normal text-slate-500 ml-2">(총 15개)</span>
+                <i class="fa-solid fa-comments text-sky-500 mr-2.5"></i> 실제 이용객 리얼 후기 <span class="text-sm font-normal text-slate-500 ml-2"> </span>
             </h2>
-        </div>       
+        </div>        
         <!-- Reviews Grid Container -->
         <div id="reviewsContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             <!-- Review 1 -->
